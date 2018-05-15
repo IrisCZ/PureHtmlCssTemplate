@@ -1,0 +1,45 @@
+@import base/variables
+
+aside
+  background-color: $grey-color
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5)
+  color: $ligth-grey-color
+  grid-column: aside-start / main-start
+  grid-row: main-start / end
+  line-height: 3em
+  padding-top: 1em
+  li
+    padding: 0 1em
+    cursor: pointer
+    em
+      margin-right: 0.5em
+  ul.options
+    display: none
+    margin-left: 1em
+  .group
+    cursor: pointer
+    display: block
+    &:hover::after
+      content: "\f107"
+      font-family: 'Font Awesome\ 5 Free'
+      font-weight: 900
+      font-style: normal
+      margin: 0px 10px 0px 10px
+      text-decoration: none
+      float: right
+  input:checked + ul.options
+    display: block
+  .open-aside
+    cursor: pointer
+    position: relative
+  .hide-aside
+    border-top: .5em solid transparent
+    border-bottom: .5em solid transparent
+    border-right: .5em solid $main-color
+    font-size: 3em
+    left: 4.75em
+    position: absolute
+    top: -.25em
+    text-align: center
+    width: 0
+    height: 0

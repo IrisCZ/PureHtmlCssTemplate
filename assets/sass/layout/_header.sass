@@ -1,0 +1,73 @@
+header
+  background-color: $ligth-grey-color
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15)
+  grid-column: aside-start / end
+  grid-row: start / main-start
+  display: flex
+  justify-content: space-between
+  padding: .5em
+  z-index: 1
+  h1
+    margin-bottom: 0
+
+  .inline
+    display: flex
+    justify-content: flex-end
+    align-items: center
+  .icon
+    align-items: center
+    background-color: $main-color
+    border-radius: 50%
+    color: $ligth-grey-color
+    cursor: pointer
+    font-size: 1.2em
+    margin-right: 1em
+    padding: .5em
+    position: relative
+    .badge
+      background-color: $ligth-grey-color
+      border: 2px solid $success-color
+      border-radius: 50%
+      color: $success-color
+      font-size: .8em
+      position: absolute
+      bottom: 1.6em
+      left: 1.6em
+      padding: .2em .4em
+      &.error
+        border: 2px solid $error-color
+        color: $error-color
+
+  .search
+    position: relative
+    direction: rtl
+  .search-icon
+    z-index: 1
+  .search-input
+    border-radius: 1.5em
+    border: 1px solid $main-color
+    height: 2.4rem
+    direction: ltr
+    margin-right: 1.2rem
+    padding: 0 3rem 0 1rem
+    position: absolute
+    top: 0
+    transition: width 1.5s ease
+    visibility: hidden
+    width: 3em
+    z-index: 0
+  #open-search:checked + .search-input
+    width: 30em
+    visibility: visible
+    
+  .user
+    border: 2px solid $accent-color
+    box-sizing: content-box
+    height: 100%
+    width: 100%
+    img
+      height: 100%
+
+.leaned
+  transform: rotate(-3deg) translate(14em)
+  color: $main-color

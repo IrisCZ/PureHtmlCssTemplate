@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/* line 2, ../../assets/sass/base/_typography.sass */
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 2em;
+}
+
+/* line 6, ../../assets/sass/base/_typography.sass */
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 1em;
+}
+
+/* line 10, ../../assets/sass/base/_typography.sass */
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* line 14, ../../assets/sass/base/_typography.sass */
+p {
+  font-size: 1em;
+  font-family: "Muli", sans-serif;
+  margin-bottom: 1em;
+}
+
+/* line 19, ../../assets/sass/base/_typography.sass */
+a {
+  color: var(--ligth-grey-color);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* line 24, ../../assets/sass/base/_typography.sass */
+.title {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+/* line 30, ../../assets/sass/base/_typography.sass */
+.accent-text {
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 1.8em;
+}
+
+/* line 1, ../../assets/sass/layout/_header.sass */
+header {
+  background-color: #f1f4f5;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  grid-column: aside-start/end;
+  grid-row: start/main-start;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  z-index: 1;
+}
+/* line 10, ../../assets/sass/layout/_header.sass */
+header h1 {
+  margin-bottom: 0;
+}
+/* line 13, ../../assets/sass/layout/_header.sass */
+header .inline {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* line 17, ../../assets/sass/layout/_header.sass */
+header .icon {
+  align-items: center;
+  background-color: #cad04a;
+  border-radius: 50%;
+  color: #f1f4f5;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-right: 1em;
+  padding: 0.5em;
+  position: relative;
+}
+/* line 27, ../../assets/sass/layout/_header.sass */
+header .icon .badge {
+  background-color: #f1f4f5;
+  border: 2px solid #456177;
+  border-radius: 50%;
+  color: #456177;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 1.6em;
+  left: 1.6em;
+  padding: 0.2em 0.4em;
+}
+/* line 37, ../../assets/sass/layout/_header.sass */
+header .icon .badge.error {
+  border: 2px solid #951a14;
+  color: #951a14;
+}
+/* line 41, ../../assets/sass/layout/_header.sass */
+header .search {
+  position: relative;
+  direction: rtl;
+}
+/* line 44, ../../assets/sass/layout/_header.sass */
+header .search-icon {
+  z-index: 1;
+}
+/* line 46, ../../assets/sass/layout/_header.sass */
+header .search-input {
+  border-radius: 1.5em;
+  border: 1px solid #cad04a;
+  height: 2.4rem;
+  direction: ltr;
+  margin-right: 1.2rem;
+  padding: 0 3rem 0 1rem;
+  position: absolute;
+  top: 0;
+  transition: width 1.5s ease;
+  visibility: hidden;
+  width: 3em;
+  z-index: 0;
+}
+/* line 59, ../../assets/sass/layout/_header.sass */
+header #open-search:checked + .search-input {
+  width: 30em;
+  visibility: visible;
+}
+/* line 63, ../../assets/sass/layout/_header.sass */
+header .user {
+  border: 2px solid #869514;
+  box-sizing: content-box;
+  height: 100%;
+  width: 100%;
+}
+/* line 68, ../../assets/sass/layout/_header.sass */
+header .user img {
+  height: 100%;
+}
+
+/* line 71, ../../assets/sass/layout/_header.sass */
+.leaned {
+  transform: rotate(-3deg) translate(14em);
+  color: #cad04a;
+}
+
+/* line 3, ../../assets/sass/layout/_sidebar.sass */
+aside {
+  background-color: #272c2f;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+  color: #f1f4f5;
+  grid-column: aside-start/main-start;
+  grid-row: main-start/end;
+  line-height: 3em;
+  padding-top: 1em;
+}
+/* line 11, ../../assets/sass/layout/_sidebar.sass */
+aside li {
+  padding: 0 1em;
+  cursor: pointer;
+}
+/* line 14, ../../assets/sass/layout/_sidebar.sass */
+aside li em {
+  margin-right: 0.5em;
+}
+/* line 16, ../../assets/sass/layout/_sidebar.sass */
+aside ul.options {
+  display: none;
+  margin-left: 1em;
+}
+/* line 19, ../../assets/sass/layout/_sidebar.sass */
+aside .group {
+  cursor: pointer;
+  display: block;
+}
+/* line 22, ../../assets/sass/layout/_sidebar.sass */
+aside .group:hover::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  margin: 0px 10px 0px 10px;
+  text-decoration: none;
+  float: right;
+}
+/* line 30, ../../assets/sass/layout/_sidebar.sass */
+aside input:checked + ul.options {
+  display: block;
+}
+/* line 32, ../../assets/sass/layout/_sidebar.sass */
+aside .open-aside {
+  cursor: pointer;
+  position: relative;
+}
+/* line 35, ../../assets/sass/layout/_sidebar.sass */
+aside .hide-aside {
+  border-top: 0.5em solid transparent;
+  border-bottom: 0.5em solid transparent;
+  border-right: 0.5em solid #cad04a;
+  font-size: 3em;
+  left: 4.75em;
+  position: absolute;
+  top: -0.25em;
+  text-align: center;
+  width: 0;
+  height: 0;
+}
+
+/* line 3, ../../assets/sass/layout/_main.sass */
+main {
+  background-color: #f1f4f5;
+  grid-column: main-start/end;
+  grid-row: main-start/end;
+  padding: 0.5em;
+}
+/* line 12, ../../assets/sass/layout/_main.sass */
+main .no-margin-bottom {
+  margin-bottom: 0;
+}
+/* line 15, ../../assets/sass/layout/_main.sass */
+main section.block {
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  margin: 1em;
+  padding: 1em;
+}
+
+/* line 7, ../../assets/sass/style.sass */
+body {
+  color: #272c2f;
+  height: 100vh;
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: [aside-start] minmax(12em, 16em) [main-start] 1fr [end];
+  grid-template-rows: [start] 5em [main-start] 1fr [end];
+}
+
+/* line 16, ../../assets/sass/style.sass */
+.hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+/* line 20, ../../assets/sass/style.sass */
+input:focus {
+  outline: none;
+  box-shadow: 0 0 3px #456177;
+}
