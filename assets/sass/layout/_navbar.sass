@@ -1,0 +1,81 @@
+@import base/variables
+
+.navbar
+  background-color: $grey-color
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5)
+  color: $ligth-grey-color
+  grid-column: aside-start / main-start
+  grid-row: main-start / end
+  line-height: 3em
+  padding-top: 1em
+  a
+    display: block
+  em
+    border: none
+    background-color: transparent
+    color: $ligth-grey-color
+    margin-right: .5em
+  .menu-item
+    padding: 0 1em
+    cursor: pointer
+    border-bottom: 2px solid transparent
+    em
+      cursor: pointer
+  .options
+    display: none
+  .group
+    cursor: pointer
+    display: block
+    &:hover::after
+      content: "\f107"
+      font-family: 'Font Awesome\ 5 Free'
+      font-weight: 900
+      font-style: normal
+      margin: 0px 10px 0px 10px
+      text-decoration: none
+      float: right
+  input:checked + ul.options
+    display: block
+  .toggle-aside
+    position: relative
+    display: block
+    .toggle-button
+      border-top: .5em solid transparent
+      border-bottom: .5em solid transparent
+      border-right: .5em solid $main-color
+      cursor: pointer
+      font-size: 3em
+      left: 4.75em
+      position: absolute
+      text-align: center
+      top: -.25em
+      transition: none
+      height: 0
+      width: 0
+
+input:checked + .container
+  grid-template-columns: unquote("[aside-start] 3.1em [main-start] 1fr [end]")
+  overflow: hidden
+  *
+    transition: none
+  .menu-label
+    display: none
+  .navbar
+    ul.nav-items
+      padding-top: 3.6em
+      .title
+        display: none
+      .menu-item
+        display: inline-block
+        border-bottom: 2px solid transparent
+        &:hover::after
+          content: none
+        &:hover
+          border-bottom: 2px solid $main-color
+      .options
+        li
+          padding: 0
+    .toggle-button
+      border-left: .5em solid $main-color
+      border-right: 0
+      left: .9em

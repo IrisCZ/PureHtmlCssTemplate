@@ -1,96 +1,273 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<title>PureHtmlandCSSTemplate</title>
-		<link rel="icon" href="public/imgs/favicon.png" type="image/png">
-		<link rel="stylesheet" type="text/css" href="public/css/reset.css">
-		<link href="https://fonts.googleapis.com/css?family=Muli|Montserrat|East+Sea+Dokdo" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="public/css/style.css">
-	</head>
-	<body>
+<head>
+	<meta charset="utf-8">
+	<title>PureHtmlandCSSTemplate</title>
+	<link rel="icon" href="public/imgs/favicon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="public/css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli|Montserrat|East+Sea+Dokdo" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+</head>
+<body>
+	<input class= "hidden" type="checkbox" id="open-aside">
+	<div class="container">
+
 		<header class="header">
 			<div>
 				<h1 class="title no-margin-bottom">Pure Html and Css template</h1>
 				<h2 class="accent-text leaned">And a little of Javascript!</h2>
 			</div>
 			<div class="inline">
+
 				<div class="search">
 					<label for="open-search">
 						<div class="search-icon icon">
-							<em class="fa fa-search"></em>
+							<em class="fa fa-search" aria-label="Search"></em>
 						</div>
 					</label>
 					<input type="checkbox" class= "hidden" id="open-search">
 					<input class="search-input" type="text" name="" value="">
 				</div>
-				<div class="mail icon">
-					<em class="far fa-envelope"></em>
-					<span class="badge">6</span>
+
+				<div class="mail">
+					<label class="icon"for="open-mail">
+						<em class="far fa-envelope" aria-label="Mail"></em>
+						<span class="badge">6</span>
+					</label>
+					<input type="checkbox" class= "hidden" id="open-mail" name="header-options">
+					<ul class="mail-options">
+						<li>
+							<div class="item-title">
+								<img class="title-img" src="public/imgs/girl1.png" alt="Profile's photo">
+								<div>
+									<span class="title-description">María López</span>
+									<p class="date">Just now</p>
+								</div>
+							</div>
+							<p class="message">This is a example of mail that just can have two phrases.</p>
+						</li>
+						<li>
+							<div class="item-title">
+								<img class="title-img" src="public/imgs/girl1.png" alt="Profile's photo">
+								<div>
+									<span class="title-description">Jane Smith</span>
+									<p class="date">10 minutes ago</p>
+								</div>
+							</div>
+							<p class="message">This is a example of mail that just can have two phrases.</p>
+						</li>
+						<li>
+							<div class="item-title">
+								<img class="title-img" src="public/imgs/girl1.png" alt="Profile's photo">
+								<div>
+									<span class="title-description">Wang Shu</span>
+									<p class="date">17/05/2018</p>
+								</div>
+							</div>
+							<p class="message">This is a example of mail that just can have two phrases.</p>
+						</li>
+					</ul>
 				</div>
-				<div class="notification icon">
-					<em class="fas fa-bell"></em>
-					<span class="badge error">2</span>
+
+				<div class="notification">
+					<label class="icon"for="open-notification">
+						<em class="fas fa-bell" aria-label="Notification"></em>
+						<span class="badge error">3</span>
+					</label>
+					<input type="checkbox" class= "hidden" id="open-notification" name="header-options">
+					<ul class="notification-options">
+						<li>
+							<span class="icon">
+								<em class="fas fa-check"></em>
+							</span>
+							<p class="message">This is a success notification.</p>
+						</li>
+						<li>
+							<span class="icon">
+								<em class="fas fa-exclamation"></em>
+							</span>
+							<p class="message">This is a warning notification.</p>
+						</li>
+						<li>
+							<em class="icon fas fa-times"></em>
+							<p class="message">This is error a notification.</p>
+						</li>
+					</ul>
 				</div>
 				<div class="user">
 					<img src="public/imgs/perfil.jpg" alt="User Image">
 				</div>
 			</div>
 		</header>
+
 		<aside class="navbar">
-			<label class="open-aside" for="open-aside">
-				<div class="hide-aside">
-				</div>
-			</label>
-			<input class= "hidden" type="checkbox" id="open-aside">
-			<ul>
-				<h3 class="title">UI Elements</h3>
-				<li>
-					<label class="group" for="open-components">
-						<em class="fa fa-laptop"></em> Components
-					</label>
-					<input class= "hidden" type="checkbox" id="open-components">
-					<ul class="options">
-						<li><a href="#blocks"><em class="fas fa-square"></em> Blocks</a></li>
-						<li><a href="#buttons"><em class="far fa-hand-point-up"></em> Buttons</a></li>
-						<li><a href="#alerts"><em class="fas fa-exclamation-triangle"></em> Alerts </a></li>
+			<nav>
+				<label class="toggle-aside" for="open-aside" aria-label="Close navigation">
+					<div class="toggle-button">
+					</div>
+				</label>
+				<ul class="nav-items">
+					<h3 class="title">UI Elements</h3>
+					<li class="menu-item">
+						<label for="open-components">
+							<em  class="fa fa-laptop" aria-label="Components"></em>
+							<span class="menu-label">Components</span>
+						</label>
+						<input class= "hidden" type="checkbox" id="open-components">
+						<ul class="options">
+							<li>
+								<li>
+									<a href="#alerts">
+										<em  class="fas fa-exclamation-triangle" aria-label="Alerts"></em>
+										<span class="menu-label">Alerts</span>
+									</a>
+								</li>
+								<li>
+									<a href="#blocks">
+										<em  class="fas fa-square" aria-label="Blocks"></em>
+										<span class="menu-label">Blocks</span>
+									</a>
+								</li>
+								<li>
+									<a href="#buttons">
+										<em  class="far fa-hand-point-up" aria-label="Buttons"></em>
+										<span class="menu-label">Buttons</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item">
+							<label for="open-tables">
+								<em  class="fa fa-table" aria-label="Tables"></em>
+								<span class="menu-label">Tables</span>
+							</label>
+							<input class= "hidden" type="checkbox" id="open-tables">
+							<ul class="list-unstyled options">
+								<li >
+									<a href="#basic-table">
+										<em  class="fa fa-table" aria-label="Basic Table"></em>
+										<span class="menu-label">Basic Table</span>
+									</a>
+								</li>
+								<li>
+									<a href="#data-table">
+										<em  class="fa fa-table" aria-label="Data Table"></em>
+										<span class="menu-label">Data Table</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item">
+							<a href="#forms">
+								<em  class="fab fa-wpforms" aria-label="Forms"></em>
+								<span class="menu-label">Forms</span>
+							</a>
+						</li>
+						<h3 class="title">Pages</h3>
+						<ul>
+							<li class="menu-item">
+								<a href="#login">
+									<em  class="fas fa-sign-in-alt" aria-label="Login"></em>
+									<span class="menu-label">LogIn</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#forgetpas">
+									<em  class="fas fa-key" aria-label="Forget Password"></em>
+									<span class="menu-label">Forget Password</span>
+								</a>
+							</li>
+						</ul>
 					</ul>
-				</li>
-				<li>
-					<label class="group" for="open-tables">
-						<em class="fa fa-table"></em> Tables
-					</label>
-					<input class= "hidden" type="checkbox" id="open-tables">
-					<ul class="list-unstyled options">
-						<li><a href="#basic-table"><em class=""></em> Basic Table</a></li>
-						<li><a href="#data-table"><em class=""></em> Data Table</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#forms"><em class="fab fa-wpforms"></em> Forms</a>
-				</li>
-				<h3 class="title">Pages</h3>
-				<ul>
-					<li><a href="#LogIn"><em class=""></em> LogIn</a></li>
-					<li><a href="#LogIn"><em class=""></em> Forget Password</a></li>
-				</ul>
-			</ul>
-		</aside>
-		<main class="content">
-			<header>
-				<h3 class="no-margin-bottom">Blocks</h3>
-			</header>
-			<section class="block">
-				<h1>This is a HERO example with a large TITLE.</h1>
-				<h2>And also a hero SUBHEADING example.</h2>
-				<h3>And a SUBHEADING of a subheading.</h3>
-				<p>Besides some nonsense text just to try how the lines fit in a quite small paragraph with a couple of lines in large screens.</p>
-			</section>
+				</nav>
+			</aside>
+			<main class="content">
+				<article  class="block">
+					<a id="alerts"></a>
+					<header>
+						<h3 class="no-margin-bottom">Alerts</h3>
+					</header>
+					<section>
+						<div class="alert generic-alert">
+							<div class="message">
+								<div class="info">
+									<h3>Generic alert!</h3>
+									<p>Just to add some information.</p>
+								</div>
+							</div>
+							<button class="button-close" type="button" name="button">
+								<em class="fas fa-times"></em>
+							</button>
+						</div>
+						<div class="alert info-alert">
+							<div class="message">
+								<em class="icon fas fa-info"></em>
+								<div class="info">
+									<h3>Info:</h3>
+									<p>This is a info box with all the info you should need.</p>
+								</div>
+							</div>
+							<button class="button-close" type="button" name="button">
+								<em class="fas fa-times"></em>
+							</button>
+						</div>
+						<div class="alert success-alert">
+							<div class="message">
+								<em class="icon fas fa-check"></em>
+								<div class="info">
+									<h3>Success!</h3>
+									<p>Everything went perfect!</p>
+								</div>
+							</div>
+							<button class="button-close" type="button" name="button">
+								<em class="fas fa-times"></em>
+							</button>
+						</div>
+						<div class="alert warning-alert">
+							<div class="message">
+								<em class="icon fas fa-exclamation"></em>
+								<div class="info">
+									<h3>Alert!</h3>
+									<p>You should tell the user what´s happening</p>
+								</div>
+							</div>
+							<button class="button-close" type="button" name="button">
+								<em class="fas fa-times"></em>
+							</button>
+						</div>
+						<div class="alert error-alert">
+							<div class="message">
+								<em class="icon fas fa-times"></em>
+								<div class="info">
+									<h3>Error!</h3>
+									<p>Something went wrong! What could it be...</p>
+								</div>
+							</div>
+							<button class="button-close" type="button" name="button">
+								<em class="fas fa-times"></em>
+							</button>
+						</div>
+					</section>
+				</article>
+				<article class="block">
+					<a id="blocks"></a>
+					<header>
+						<h3 class="no-margin-bottom">Blocks</h3>
+					</header>
+					<section>
+						<h1>This is a HERO example with a large TITLE.</h1>
+						<h2>And also a hero SUBHEADING example.</h2>
+						<h3>And a SUBHEADING of a subheading.</h3>
+						<p>Besides some nonsense text just to try how the lines fit in a quite small paragraph with a couple of lines in large screens.</p>
+					</section>
+				</article>
+			</main>
+			<footer>
 
-		</main>
-		<footer>
+			</footer>
+		</div>
+		<script src="assets/js/main.js" type="text/javascript" ></script>
 
-		</footer>
 	</body>
-</html>
+	</html>

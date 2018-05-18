@@ -1,0 +1,45 @@
+@mixin linear-gradient-alert($args...)
+  background-image: -o-linear-gradient($args)
+  background-image: -moz-linear-gradient($args)
+  background-image: -webkit-linear-gradient($args)
+  background-image: linear-gradient($args)
+
+@mixin dropdown($args...)
+  background-color: $grey-color
+  color: $ligth-grey-color
+  display: flex
+  flex-direction: column
+  font-size: .8em
+  left: 0
+  margin-top: 2rem
+  max-height: 50em
+  position: absolute
+  visibility: visible
+  width: auto
+  z-index: 0
+  li
+    border-bottom: 1px solid $main-color
+    padding: 1em
+    &:last-child
+      border-bottom: none
+    .item-title
+      display: flex
+      flex-direction: row
+      align-items: center
+      .title-img
+        border-radius: 50%
+        margin: 0 .5rem .5rem 0
+      .title-description
+        display: block
+        color: $main-color
+        font-weight: 900
+        margin-bottom: .5em
+    .message
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-box-orient: vertical
+      -webkit-line-clamp: 2
+      line-height: 1rem
+      max-height: 2rem
+      margin-bottom: 0

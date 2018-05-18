@@ -1,22 +1,9 @@
-@import base/typography
 @import base/variables
+@import base/mixins
+@import base/body
+@import base/typography
 @import layout/header
-@import layout/sidebar
+@import layout/navbar
 @import layout/main
-
-body
-  color: $grey-color
-  height: 100vh
-  font-family: 'Muli', sans-serif
-  font-weight: 400
-  display: grid
-  grid-template-columns: unquote("[aside-start] minmax(12em, 16em) [main-start] 1fr [end]")
-  grid-template-rows: unquote("[start] 5em [main-start] 1fr [end]")
-
-.hidden
-  visibility: hidden
-  position: absolute
-
-input:focus
-  outline: none
-  box-shadow: 0 0 3px $success-color
+@import components/alerts
+@import components/buttons

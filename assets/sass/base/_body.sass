@@ -1,0 +1,26 @@
+@import base/variables
+body
+  overflow: hidden
+*
+  // transition: all 1s ease-in-out
+  box-sizing: border-box
+  scroll-behavior: smooth
+  
+.container
+  color: $grey-color
+  height: 100vh
+  font-family: 'Muli', sans-serif
+  font-weight: 400
+  display: grid
+  grid-template-columns: unquote("[aside-start] 16em [main-start] 1fr [end]")
+  grid-template-rows: unquote("[start] 5em [main-start] 1fr [end]")
+  width: 100vw
+  transition: 2s
+
+.hidden
+  visibility: hidden
+  position: absolute
+
+input:focus
+  outline: none
+  box-shadow: 0 0 3px $success-color
