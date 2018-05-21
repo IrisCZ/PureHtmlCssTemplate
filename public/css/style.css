@@ -1,4 +1,56 @@
 @charset "UTF-8";
+/* line 4, ../../assets/sass/base/_colors.sass */
+.bg-success {
+  background-color: #457745 !important;
+}
+
+/* line 7, ../../assets/sass/base/_colors.sass */
+.bg-info {
+  background-color: #456177 !important;
+}
+
+/* line 10, ../../assets/sass/base/_colors.sass */
+.bg-warning {
+  background-color: #b1860d !important;
+}
+
+/* line 13, ../../assets/sass/base/_colors.sass */
+.bg-error {
+  background-color: #951a14 !important;
+}
+
+/* line 16, ../../assets/sass/base/_colors.sass */
+.bg-grad-success {
+  background-image: -o-linear-gradient(to bottom, #457745, rgba(69, 119, 69, 0.4) !important);
+  background-image: -moz-linear-gradient(to bottom, #457745, rgba(69, 119, 69, 0.4) !important);
+  background-image: -webkit-linear-gradient(to bottom, #457745, rgba(69, 119, 69, 0.4) !important);
+  background-image: linear-gradient(to bottom, #457745, rgba(69, 119, 69, 0.4) !important);
+}
+
+/* line 19, ../../assets/sass/base/_colors.sass */
+.bg-grad-info {
+  background-image: -o-linear-gradient(to bottom, #456177, rgba(69, 97, 119, 0.4) !important);
+  background-image: -moz-linear-gradient(to bottom, #456177, rgba(69, 97, 119, 0.4) !important);
+  background-image: -webkit-linear-gradient(to bottom, #456177, rgba(69, 97, 119, 0.4) !important);
+  background-image: linear-gradient(to bottom, #456177, rgba(69, 97, 119, 0.4) !important);
+}
+
+/* line 22, ../../assets/sass/base/_colors.sass */
+.bg-grad-warning {
+  background-image: -o-linear-gradient(to bottom, #b1860d, rgba(177, 134, 13, 0.4) !important);
+  background-image: -moz-linear-gradient(to bottom, #b1860d, rgba(177, 134, 13, 0.4) !important);
+  background-image: -webkit-linear-gradient(to bottom, #b1860d, rgba(177, 134, 13, 0.4) !important);
+  background-image: linear-gradient(to bottom, #b1860d, rgba(177, 134, 13, 0.4) !important);
+}
+
+/* line 25, ../../assets/sass/base/_colors.sass */
+.bg-grad-error {
+  background-image: -o-linear-gradient(to bottom, #951a14, rgba(149, 26, 20, 0.4) !important);
+  background-image: -moz-linear-gradient(to bottom, #951a14, rgba(149, 26, 20, 0.4) !important);
+  background-image: -webkit-linear-gradient(to bottom, #951a14, rgba(149, 26, 20, 0.4) !important);
+  background-image: linear-gradient(to bottom, #951a14, rgba(149, 26, 20, 0.4) !important);
+}
+
 /* line 2, ../../assets/sass/base/_body.sass */
 body {
   overflow: hidden;
@@ -522,14 +574,14 @@ main article.block section {
 
 /* line 37, ../../assets/sass/components/_alerts.sass */
 .warning-alert {
-  background-image: -o-linear-gradient(to bottom, #956014, rgba(149, 96, 20, 0.4));
-  background-image: -moz-linear-gradient(to bottom, #956014, rgba(149, 96, 20, 0.4));
-  background-image: -webkit-linear-gradient(to bottom, #956014, rgba(149, 96, 20, 0.4));
-  background-image: linear-gradient(to bottom, #956014, rgba(149, 96, 20, 0.4));
+  background-image: -o-linear-gradient(to bottom, #b1860d, rgba(177, 134, 13, 0.4));
+  background-image: -moz-linear-gradient(to bottom, #b1860d, rgba(177, 134, 13, 0.4));
+  background-image: -webkit-linear-gradient(to bottom, #b1860d, rgba(177, 134, 13, 0.4));
+  background-image: linear-gradient(to bottom, #b1860d, rgba(177, 134, 13, 0.4));
 }
 /* line 39, ../../assets/sass/components/_alerts.sass */
 .warning-alert button {
-  color: #956014;
+  color: #b1860d;
 }
 
 /* line 41, ../../assets/sass/components/_alerts.sass */
