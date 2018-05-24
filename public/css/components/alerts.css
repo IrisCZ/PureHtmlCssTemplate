@@ -7,7 +7,7 @@ Error: Invalid CSS after "": expected expression (e.g. 1px, bold), was "@include
 3: 
 4: .alert-primary
 5:   background-color: rgba(212,228,239,1)
-6:   background: @include filter-gradient($ligth-grey-color, $primary-color, vertical)
+6:   background: @include filter-gradient($ligth-grey, $primary-color, vertical)
 7:   background: @include background-image(linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%))
 
 Backtrace:
@@ -49,7 +49,7 @@ Backtrace:
 /usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
 /usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
 */
-body:before {
+body:before 
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"\": expected expression (e.g. 1px, bold), was \"@include filter...\"\A         on line 6 of /mnt/d/PROGRAMACION/_Proyectos/PureHtmlCssJsTemplate/assets/sass/components/alerts.sass\A \A 1: .alert\A 2:   display: flex\A 3: \A 4: .alert-primary\A 5:   background-color: rgba(212,228,239,1)\A 6:   background: @include filter-gradient($ligth-grey-color, $primary-color, vertical)\A 7:   background: @include background-image(linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%))"; }
+  content: "Error: Invalid CSS after \"\": expected expression (e.g. 1px, bold), was \"@include filter...\"\A         on line 6 of /mnt/d/PROGRAMACION/_Proyectos/PureHtmlCssJsTemplate/assets/sass/components/alerts.sass\A \A 1: .alert\A 2:   display: flex\A 3: \A 4: .alert-primary\A 5:   background-color: rgba(212,228,239,1)\A 6:   background: @include filter-gradient($ligth-grey, $primary-color, vertical)\A 7:   background: @include background-image(linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%))"; 

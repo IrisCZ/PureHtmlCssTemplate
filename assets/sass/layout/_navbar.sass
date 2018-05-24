@@ -1,39 +1,42 @@
 @import base/variables
 
 .navbar
-  background-color: $grey-color
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5)
-  color: $ligth-grey-color
+  background-color: $grey
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)
+  color: $ligth-grey
   grid-column: aside-start / main-start
   grid-row: main-start / end
   line-height: 3em
   padding-top: 1em
+  z-index: 1
   a
     display: block
   em
     border: none
     background-color: transparent
-    color: $ligth-grey-color
+    color: $ligth-grey
     margin-right: .5em
   .menu-item
-    padding: 0 1em
     cursor: pointer
     border-bottom: 2px solid transparent
+    padding: 0 1em
     em
       cursor: pointer
-  .options
-    display: none
-  .group
-    cursor: pointer
-    display: block
-    &:hover::after
-      content: "\f107"
-      font-family: 'Font Awesome\ 5 Free'
-      font-weight: 900
-      font-style: normal
-      margin: 0px 10px 0px 10px
-      text-decoration: none
-      float: right
+    .menu-title
+      cursor: pointer
+      display: block
+      &:hover::after
+        content: "\f107"
+        font-family: 'Font Awesome\ 5 Free'
+        font-weight: 900
+        font-style: normal
+        margin: 0px 10px 0px 10px
+        text-decoration: none
+        float: right
+    .options
+      display: none
+      margin-left: 1em
+
   input:checked + ul.options
     display: block
   .toggle-aside
@@ -53,11 +56,9 @@
       height: 0
       width: 0
 
-input:checked + .container
+#open-aside:checked + .container
   grid-template-columns: unquote("[aside-start] 3.1em [main-start] 1fr [end]")
   overflow: hidden
-  *
-    transition: none
   .menu-label
     display: none
   .navbar
@@ -68,13 +69,35 @@ input:checked + .container
       .menu-item
         display: inline-block
         border-bottom: 2px solid transparent
-        &:hover::after
-          content: none
         &:hover
           border-bottom: 2px solid $main-color
+        .menu-title
+          &:hover::after
+            content: none
+          & > em
+            margin: 0
       .options
-        li
-          padding: 0
+        display: flex
+        flex-direction: column
+        margin-left: -15rem
+        overflow: hidden
+        padding: 1em
+        position: absolute
+        width: auto
+
+      input:checked + .options
+        transition: margin-left .5s ease-in-out
+        border-top: 2px solid $main-color
+        @include dropright()
+
+        .title-dropright
+          cursor: default
+          display: block
+          font-weight: 900
+          position: relative
+          text-transform: uppercase
+          visibility: visible
+
     .toggle-button
       border-left: .5em solid $main-color
       border-right: 0

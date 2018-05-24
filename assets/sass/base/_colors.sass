@@ -1,26 +1,42 @@
 @import base/mixins
 @import base/variables
 
+.info
+  color: $info-color
+.success
+  color: $success-color
+.warning
+  color: $warning-color
+.error
+  color: $error-color
+
 .bg-success
   background-color: $success-color !important
+  color: $white
 
 .bg-info
   background-color: $info-color !important
+  color: $white
 
 .bg-warning
   background-color: $warning-color !important
+  color: $white
 
 .bg-error
   background-color: $error-color !important
+  color: $white
+
+.bg-grad
+  @include linear-gradient-a(to bottom, $grey, rgba($grey, .4))
 
 .bg-grad-success
-  @include linear-gradient-alert(to bottom, $success-color, rgba($success-color, .4) !important)
+  @include linear-gradient-a(to bottom, $success-color, rgba($success-color, .4))
 
 .bg-grad-info
-  @include linear-gradient-alert(to bottom, $info-color, rgba($info-color, .4) !important)
+  @include linear-gradient-a(to bottom, $info-color, rgba($info-color, .4))
 
 .bg-grad-warning
-  @include linear-gradient-alert(to bottom, $warning-color, rgba($warning-color, .4) !important)
+  @include linear-gradient-a(to bottom, $warning-color, rgba($warning-color, .4))
 
 .bg-grad-error
-  @include linear-gradient-alert(to bottom, $error-color, rgba($error-color, .4) !important)
+  @include linear-gradient-a(to bottom, $error-color, rgba($error-color, .4))

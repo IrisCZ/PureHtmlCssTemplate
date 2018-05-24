@@ -113,51 +113,62 @@
 					<h3 class="title">UI Elements</h3>
 
 					<li class="menu-item">
-						<label for="open-components">
+						<label class="menu-title" for="open-components">
 							<em  class="fa fa-laptop" aria-label="Components"></em>
 							<span class="menu-label">Components</span>
 						</label>
-						<input class= "hidden" type="checkbox" id="open-components">
+						<input class= "hidden" type="checkbox" name="navbar-options" id="open-components">
 						<ul class="options">
+							<li class="hidden title-dropright">
+								<span>Components</span>
+							</li>
 							<li>
-								<li>
-									<a href="#alerts">
-										<em  class="fas fa-exclamation-triangle" aria-label="Alerts"></em>
-										<span class="menu-label">Alerts</span>
-									</a>
-								</li>
-								<li>
-									<a href="#blocks">
-										<em  class="fas fa-square" aria-label="Blocks"></em>
-										<span class="menu-label">Blocks</span>
-									</a>
-								</li>
-								<li>
-									<a href="#buttons">
-										<em  class="far fa-hand-point-up" aria-label="Buttons"></em>
-										<span class="menu-label">Buttons</span>
-									</a>
-								</li>
-							</ul>
+								<a href="#alerts">
+									<em  class="fas fa-exclamation-triangle" aria-label="Alerts"></em>
+									<span class="submenu-label">Alerts</span>
+								</a>
+							</li>
+							<li>
+								<a href="#blocks">
+									<em  class="fas fa-square" aria-label="Blocks"></em>
+									<span class="submenu-label">Blocks</span>
+								</a>
+							</li>
+							<li>
+								<a href="#buttons">
+									<em  class="far fa-hand-point-up" aria-label="Buttons"></em>
+									<span class="submenu-label">Buttons</span>
+								</a>
+							</li>
+							<li>
+								<a href="#grid">
+									<em  class="fas fa-th" aria-label="Grid"></em>
+									<span class="submenu-label">Grid</span>
+								</a>
+							</li>
+						</ul>
 						</li>
 
 						<li class="menu-item">
-							<label for="open-tables">
+							<label class="menu-title" for="open-tables">
 								<em  class="fa fa-table" aria-label="Tables"></em>
 								<span class="menu-label">Tables</span>
 							</label>
-							<input class= "hidden" type="checkbox" id="open-tables">
-							<ul class="list-unstyled options">
+							<input class= "hidden" type="checkbox" name="navbar-options" id="open-tables">
+							<ul class="options">
+								<li class="hidden title-dropright">
+									<span>Tables</span>
+								</li>
 								<li >
 									<a href="#basic-table">
 										<em  class="fa fa-table" aria-label="Basic Table"></em>
-										<span class="menu-label">Basic Table</span>
+										<span class="submenu-label">Basic Table</span>
 									</a>
 								</li>
 								<li>
 									<a href="#data-table">
 										<em  class="fa fa-table" aria-label="Data Table"></em>
-										<span class="menu-label">Data Table</span>
+										<span class="submenu-label">Data Table</span>
 									</a>
 								</li>
 							</ul>
@@ -169,6 +180,7 @@
 								<span class="menu-label">Forms</span>
 							</a>
 						</li>
+
 						<h3 class="title">Pages</h3>
 						<ul>
 							<li class="menu-item">
@@ -188,15 +200,15 @@
 				</nav>
 			</aside>
 			<main class="content">
-				<article  class="block">
+				<section  class="block">
 					<a id="alerts"></a>
 					<header>
 						<h3 class="no-margin-bottom">Alerts</h3>
 					</header>
-					<section>
+					<article>
 						<div class="alert generic-alert">
 							<div class="message">
-								<div class="info">
+								<div>
 									<h3>Generic alert!</h3>
 									<p>Just to add some information.</p>
 								</div>
@@ -208,7 +220,7 @@
 						<div class="alert info-alert">
 							<div class="message">
 								<em class="icon fas fa-info"></em>
-								<div class="info">
+								<div>
 									<h3>Info:</h3>
 									<p>This is a info box with all the info you should need.</p>
 								</div>
@@ -220,7 +232,7 @@
 						<div class="alert success-alert">
 							<div class="message">
 								<em class="icon fas fa-check"></em>
-								<div class="info">
+								<div>
 									<h3>Success!</h3>
 									<p>Everything went perfect!</p>
 								</div>
@@ -232,7 +244,7 @@
 						<div class="alert warning-alert">
 							<div class="message">
 								<em class="icon fas fa-exclamation"></em>
-								<div class="info">
+								<div>
 									<h3>Alert!</h3>
 									<p>You should tell the user what´s happening</p>
 								</div>
@@ -244,7 +256,7 @@
 						<div class="alert error-alert">
 							<div class="message">
 								<em class="icon fas fa-times"></em>
-								<div class="info">
+								<div>
 									<h3>Error!</h3>
 									<p>Something went wrong! What could it be...</p>
 								</div>
@@ -253,20 +265,127 @@
 								<em class="fas fa-times"></em>
 							</button>
 						</div>
-					</section>
-				</article>
-				<article class="block">
+					</article>
+				</section>
+				<section class="block">
 					<a id="blocks"></a>
 					<header>
 						<h3 class="no-margin-bottom">Blocks</h3>
 					</header>
-					<section>
+					<article>
 						<h1>This is a HERO example with a large TITLE.</h1>
 						<h2>And also a hero SUBHEADING example.</h2>
 						<h3>And a SUBHEADING of a subheading.</h3>
 						<p>Besides some nonsense text just to try how the lines fit in a quite small paragraph with a couple of lines in large screens.</p>
-					</section>
-				</article>
+					</article>
+				</section>
+				<section class="block">
+					<a id="buttons"></a>
+					<header>
+						<h3 class="no-margin-bottom">Buttons</h3>
+					</header>
+					<article class="col2">
+						<div class="card">
+							<header>
+								<strong>Default Buttons</strong>
+								<small>
+									Use <code>&lt;button&gt;</code> and add class <code> btn </code>
+									and <code> btn-info, btn-success, btn-warning or btn-error.</code><br>
+									<strong>e.g.</strong> <code>&lt;button&gt; class="btn btn-info" </code>
+								</small>
+							</header>
+							<div class="inline card-content">
+								<button type="button" name="button" class="btn">Default</button>
+								<button type="button" name="button" class="btn btn-info">Info</button>
+								<button type="button" name="button" class="btn btn-success">Success</button>
+								<button type="button" name="button" class="btn btn-warning">Warning</button>
+								<button type="button" name="button" class="btn btn-error">Error</button>
+							</div>
+						</div>
+						<div class="card">
+							<header>
+								<strong>Outlined Buttons</strong>
+								<small> As default buttons adding class <code> outlined.</code><br>
+								<strong>e.g.</strong> <code>&lt;button&gt; class="btn-info outlined" </code>
+								</small>
+							</header>
+							<div class="inline card-content">
+								<button type="button" name="button" class="btn outlined">Default</button>
+								<button type="button" name="button" class="btn-info outlined">Info</button>
+								<button type="button" name="button" class="btn-success outlined">Success</button>
+								<button type="button" name="button" class="btn-warning outlined">Warning</button>
+								<button type="button" name="button" class="btn-error outlined">Error</button>
+							</div>
+						</div>
+						<div class="card">
+							<header>
+								<strong>Gradient Buttons</strong>
+								<small>Add classes <code>btn-grad-info,... and gradient.</code><br>
+								<strong>e.g.</strong> <code>&lt;button&gt; class="btn btn-grad-info gradient" </code>
+								</small>
+							</header>
+							<div class="inline card-content">
+								<button type="button" name="button" class= "btn gradient">Default</button>
+								<button type="button" name="button" class="btn btn-grad-info gradient">Info</button>
+								<button type="button" name="button" class="btn btn-grad-success gradient">Success</button>
+								<button type="button" name="button" class="btn btn-grad-warning gradient">Warning</button>
+								<button type="button" name="button" class="btn btn-grad-error gradient">Error</button>
+							</div>
+						</div>
+						<div class="card">
+							<header>
+								<strong>Clear Buttons</strong>
+								<small> Use classes info, success, warming or error and<code> clear.</code><br>
+								<strong>e.g.</strong> <code>&lt;button&gt; class="clear info" </code>
+								</small>
+							</header>
+							<div class="inline card-content">
+								<button type="button" name="button" class= "clear">Default</button>
+								<button type="button" name="button" class="clear info">Info</button>
+								<button type="button" name="button" class="clear success">Success</button>
+								<button type="button" name="button" class="clear warning">Warning</button>
+								<button type="button" name="button" class="clear error">Error</button>
+							</div>
+						</div>
+					</article>
+				</section>
+				<section class="block">
+					<a id="grid"></a>
+					<header>
+						<h3 class="no-margin-bottom">Grid</h3>
+					</header>
+					<article>
+						<div class="grid-container">
+							<div class="secondary-section col-xs-12 col-md-4"></div>
+							<div class="terciary-section col-xs-8 col-md-2"></div>
+							<div class="terciary-section col-xs-8 col-md-2"></div>
+							<div class="small-section col-xs-4 col-md-1"></div>
+							<div class="small-section col-xs-4 col-md-1"></div>
+							<div class="small-section col-xs-4 col-md-1"></div>
+							<div class="small-section col-xs-4 col-md-1"></div>
+							<div class="secondary-section col-xs-12 col-md-4"></div>
+							<div class="terciary-section col-xs-8 col-md-2"></div>
+							<div class="small-section col-xs-4 col-md-1"></div>
+							<div class="terciary-section col-xs-8 col-md-2"></div>
+							<div class="small-section col-xs-4 col-md-1"></div>
+							<div class="terciary-section col-xs-8 col-md-2"></div>
+							<div class="small-section col-xs-4 col-md-1"></div>
+							<div class="secondary-section col-xs-12 col-md-4"></div>
+							<div class="small-section col-xs-4 col-md-1"></div>
+							<div class="terciary-section col-xs-8 col-md-2"></div>
+							<div class="secondary-section col-xs-12 col-md-4"></div>
+							<div class="small-section col-xs-4 col-md-1"></div>
+							<div class="terciary-section col-xs-8 col-md-2"></div>
+							<div class="small-section col-xs-4 col-md-1"></div>
+							<div class="col-xs-8 col-md-2"></div>
+							<div class="col-xs-8 col-md-2"></div>
+							<div class="col-xs-4 col-md-1"></div>
+							<div class="col-xs-4 col-md-1"></div>
+							<div class="col-xs-12 col-md-2"></div>
+							<div class="col-xs-12"></div>
+						</div>
+					</article>
+				</section>
 			</main>
 			<footer>
 

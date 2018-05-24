@@ -1,7 +1,62 @@
+@import base/variables
+
+.btn
+  @include button-default($grey)
+
+.btn-info
+  @include button-default($info-color)
+.btn-success
+  @include button-default($success-color)
+.btn-warning
+  @include button-default($warning-color)
+.btn-error
+  @include button-default($error-color)
+
+.outlined
+  background-color: $ligth-grey
+  color: $grey
+  &:hover
+    border-color: $white
+    background-color: $white
+
+.clear
+  background-color: transparent
+  border: none
+  color: $grey
+  cursor: pointer
+  font-size: 1em
+  &:hover
+    background-color: transparent
+    font-weight: 900
+    outline: none
+
+.info
+  color: $info-color
+.success
+  color: $success-color
+.warning
+  color: $warning-color
+.error
+  color: $error-color
+  
+.gradient
+  @include linear-gradient-a(to bottom, $grey, rgba($grey, .2))
+  background-color: $ligth-grey
+  &:hover
+    color: $white
+.btn-grad-info
+  @include linear-gradient-a(to bottom, $info-color, rgba($info-color, .2))
+.btn-grad-success
+  @include linear-gradient-a(to bottom, $success-color, rgba($success-color, .2))
+.btn-grad-warning
+  @include linear-gradient-a(to bottom, $warning-color, rgba($warning-color, .2))
+.btn-grad-error
+  @include linear-gradient-a(to bottom, $error-color, rgba($error-color, .2))
+
 .button-close
   align-self: flex-start
   border-radius: 50%
-  background-color: $ligth-grey-color
+  background-color: $ligth-grey
   border-style: none
   cursor: pointer
   outline: none

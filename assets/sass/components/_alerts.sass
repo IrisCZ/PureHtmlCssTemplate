@@ -4,7 +4,7 @@
 .alert
   align-items: center
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15)
-  color: $ligth-grey-color
+  color: $ligth-grey
   display: flex
   justify-content: space-between
   flex-direction: row
@@ -13,7 +13,7 @@
   .message
     display: flex
     .icon
-      border-right: 1px solid $ligth-grey-color
+      border-right: 1px solid $ligth-grey
       box-sizing: content-box
       margin-right: 1em
       min-width: 2em
@@ -21,24 +21,24 @@
     p:last-child
       margin-bottom: 0
 .generic-alert
-  @include linear-gradient-alert(to bottom, $ligth-grey-color, rgba($ligth-grey-color, .4))
-  color: $grey-color
+  @include linear-gradient-a(to bottom, $ligth-grey, rgba($ligth-grey, .4))
+  color: $grey
   button
-    color: $grey-color
-    border: 1px solid $grey-color
+    color: $grey
+    border: 1px solid $grey
 .info-alert
-  @include linear-gradient-alert(to bottom, $info-color, rgba($info-color, .4))
+  @include linear-gradient-a(to bottom, $info-color, rgba($info-color, .4))
   button
     color: $info-color
 .success-alert
-  @include linear-gradient-alert(to bottom, $success-color, rgba($success-color, .4))
+  @include linear-gradient-a(to bottom, $success-color, rgba($success-color, .4))
   button
     color: $success-color
 .warning-alert
-  @include linear-gradient-alert(to bottom, $warning-color, rgba($warning-color, .4))
+  @include linear-gradient-a(to bottom, $warning-color, rgba($warning-color, .4))
   button
     color: $warning-color
 .error-alert
-  @include linear-gradient-alert(to bottom, $error-color, rgba($error-color, .4))
+  @include linear-gradient-a(to bottom, $error-color, rgba($error-color, .4))
   button
     color: $error-color

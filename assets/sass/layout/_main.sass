@@ -1,7 +1,7 @@
 @import base/variables
 
 main
-  background-color: $ligth-grey-color
+  background-color: $ligth-grey
   grid-column: main-start / end
   grid-row: main-start / end
   overflow: auto
@@ -12,12 +12,15 @@ main
   header
     padding-left: 2em
 
+    small
+      text-align: right
+
   .no-margin-bottom
     margin-bottom: 0
 
-  article.block
-    background-color: $bg-color
+  section.block
+    background-color: $white
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15)
     margin: 2em
-    section
+    article
       padding: 1em

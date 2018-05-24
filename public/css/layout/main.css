@@ -1,9 +1,9 @@
 /*
-Error: Undefined variable: "$ligth-grey-color".
+Error: Undefined variable: "$ligth-grey".
         on line 2 of /mnt/d/PROGRAMACION/_Proyectos/PureHtmlCssJsTemplate/assets/sass/layout/main.sass
 
 1: main
-2:   background-color: $ligth-grey-color
+2:   background-color: $ligth-grey
 3:   grid-column: main-start / end
 4:   grid-row: main-start / end
 5: 
@@ -61,7 +61,7 @@ Backtrace:
 /usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
 /usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
 */
-body:before {
+body:before 
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ligth-grey-color\".\A         on line 2 of /mnt/d/PROGRAMACION/_Proyectos/PureHtmlCssJsTemplate/assets/sass/layout/main.sass\A \A 1: main\A 2:   background-color: $ligth-grey-color\A 3:   grid-column: main-start / end\A 4:   grid-row: main-start / end\A 5: \A 6: .container\A 7:   display: grid"; }
+  content: "Error: Undefined variable: \"$ligth-grey\".\A         on line 2 of /mnt/d/PROGRAMACION/_Proyectos/PureHtmlCssJsTemplate/assets/sass/layout/main.sass\A \A 1: main\A 2:   background-color: $ligth-grey\A 3:   grid-column: main-start / end\A 4:   grid-row: main-start / end\A 5: \A 6: .container\A 7:   display: grid"; 

@@ -1,12 +1,14 @@
-@mixin linear-gradient-alert($args...)
-  background-image: -o-linear-gradient($args)
-  background-image: -moz-linear-gradient($args)
-  background-image: -webkit-linear-gradient($args)
-  background-image: linear-gradient($args)
+@mixin linear-gradient-a($direction, $fromColor, $toColor)
+  background-image: -o-linear-gradient($direction, $fromColor, $toColor)
+  background-image: -moz-linear-gradient($direction, $fromColor, $toColor)
+  background-image: -webkit-linear-gradient($direction, $fromColor, $toColor)
+  background-image: linear-gradient($direction, $fromColor, $toColor)
+  border: 1px solid $fromColor
+  color: $white
 
 @mixin dropdown($args...)
-  background-color: $grey-color
-  color: $ligth-grey-color
+  background-color: $grey
+  color: $ligth-grey
   display: flex
   flex-direction: column
   font-size: .8em
@@ -43,3 +45,32 @@
       line-height: 1rem
       max-height: 2rem
       margin-bottom: 0
+
+@mixin dropright($args...)
+  background-color: $grey
+  color: $ligth-grey
+  font-size: .8em
+  margin-left: 2.2rem
+  overflow: hidden
+  visibility: visible
+  width: 10em
+  z-index: 0
+
+@mixin button-default($args...)
+  color: ($ligth-grey)
+  background-color: ($args)
+  background-size: 200% auto
+  border: 1.5px solid ($args)
+  border-radius: 3em
+  cursor: pointer
+  margin-bottom: 1em
+  padding: 1em 2em
+  text-transform: uppercase
+  transition: 1.5s
+  &:focus
+    outline: none
+    box-shadow: 1px 1px .15em $grey
+  &:hover
+    background-color: $ligth-grey
+    background-position: bottom center
+    color: ($args)
