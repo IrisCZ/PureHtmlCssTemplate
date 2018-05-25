@@ -1,49 +1,68 @@
-let dropdowns = ["header-options", "navbar-options"]
+let dropdownNames = ["header-options", "navbar-options"]
 
-let Template = 
-  initialize: function() 
-    dropdowns.forEach(name => 
-      new Dropdown(name);
-    )
-  
+let Template = {
+  dropdowns: [],
+  initialize: function() {
+    dropdownNames.forEach(name => {
+      Template.dropdowns.push(new Dropdown(name));
+    })
+  },
+  closeDropdowns: function() {
+    Template.dropdowns.forEach(dropdown => {
+      dropdown.close()
+    })
+  }
+}
 
+let Dropdown = function(name){
+  let elements = document.querySelectorAll(`input[type=checkbox][name=${name}]`)
 
-let Dropdown = function(name)
-
-  let addBehaviour = function()
-    let elements = document.querySelectorAll(`input[type=checkbox][name=$name]`)
-    elements.forEach(element => 
-      element.addEventListener('click', () => 
-        elements.forEach( check => 
-          if (element != check)
+  let addBehaviour = function(){
+    elements.forEach(element => {
+      element.addEventListener('click', () => {
+        elements.forEach( check => {
+          if (element != check){
             check.checked = false
-          
-        )
-      );
-    );
+          }
+        })
+      });
+    });
+  }
 
-  
+  let close = function(){
+    elements.forEach(element => {
+        element.checked = false
+    });
+  }
 
   addBehaviour();
 
+  return {
+    close: close
+  }
+}
 
 Template.initialize()
 
-document.addEventListener('click', (e) => 
-  if(dropdowns.indexOf(e.target.name) >= 0)
+document.addEventListener('click', (e) => {
+  if(dropdownNames.indexOf(e.target.name) >= 0){
     return
-  
+  }
+
   let label = e.target.closest('label')
-  if(!label)
-    console.log("OTRO")
+  if(!label){
+    closeAll()
     return
-  
+  }
+
   let checkboxId = label.getAttribute('for')
-  if(dropdowns.indexOf(document.getElementById(checkboxId).name) >= 0)
+  if(dropdownNames.indexOf(document.getElementById(checkboxId).name) >= 0){
     return
-  
-  console.log("OTRO2")
+  }
 
+  closeAll()
+});
 
-
-);
+function closeAll(){
+  Template.closeDropdowns();
+}
