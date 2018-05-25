@@ -288,11 +288,12 @@
 						<div class="card">
 							<header>
 								<strong>Default Buttons</strong>
-								<small>
-									Use <code>&lt;button&gt;</code> and add class <code> btn </code>
-									and <code> btn-info, btn-success, btn-warning or btn-error.</code><br>
-									<strong>e.g.</strong> <code>&lt;button&gt; class="btn btn-info" </code>
-								</small>
+								<div class="right">
+									<small>Use <code>&lt;button&gt;</code> and add class <code> btn </code>
+										and <code> btn-info, btn-success, btn-warning or btn-error.</code><br>
+										<strong>e.g.</strong> <code>&lt;button&gt; class="btn btn-info" </code>
+									</small>
+								</div>
 							</header>
 							<div class="inline card-content">
 								<button type="button" name="button" class="btn">Default</button>
@@ -305,9 +306,11 @@
 						<div class="card">
 							<header>
 								<strong>Outlined Buttons</strong>
-								<small> As default buttons adding class <code> outlined.</code><br>
-								<strong>e.g.</strong> <code>&lt;button&gt; class="btn-info outlined" </code>
-								</small>
+								<div class="right">
+									<small> As default buttons adding class <code> outlined.</code><br>
+									<strong>e.g.</strong> <code>&lt;button&gt; class="btn-info outlined" </code>
+									</small>
+								</div>
 							</header>
 							<div class="inline card-content">
 								<button type="button" name="button" class="btn outlined">Default</button>
@@ -320,9 +323,11 @@
 						<div class="card">
 							<header>
 								<strong>Gradient Buttons</strong>
-								<small>Add classes <code>btn-grad-info,... and gradient.</code><br>
-								<strong>e.g.</strong> <code>&lt;button&gt; class="btn btn-grad-info gradient" </code>
-								</small>
+								<div class="right">
+									<small>Add classes <code>btn-grad-info,... and gradient.</code><br>
+									<strong>e.g.</strong> <code>&lt;button&gt; class="btn btn-grad-info gradient" </code>
+									</small>
+								</div>
 							</header>
 							<div class="inline card-content">
 								<button type="button" name="button" class= "btn gradient">Default</button>
@@ -335,9 +340,11 @@
 						<div class="card">
 							<header>
 								<strong>Clear Buttons</strong>
-								<small> Use classes info, success, warming or error and<code> clear.</code><br>
-								<strong>e.g.</strong> <code>&lt;button&gt; class="clear info" </code>
-								</small>
+								<div class="right">
+									<small> Use classes info, success, warming or error and<code> clear.</code><br>
+									<strong>e.g.</strong> <code>&lt;button&gt; class="clear info" </code>
+									</small>
+								</div>
 							</header>
 							<div class="inline card-content">
 								<button type="button" name="button" class= "clear">Default</button>
@@ -355,34 +362,65 @@
 						<h3 class="no-margin-bottom">Grid</h3>
 					</header>
 					<article>
-						<div class="grid-container">
-							<div class="secondary-section col-xs-12 col-md-4"></div>
-							<div class="terciary-section col-xs-8 col-md-2"></div>
-							<div class="terciary-section col-xs-8 col-md-2"></div>
-							<div class="small-section col-xs-4 col-md-1"></div>
-							<div class="small-section col-xs-4 col-md-1"></div>
-							<div class="small-section col-xs-4 col-md-1"></div>
-							<div class="small-section col-xs-4 col-md-1"></div>
-							<div class="secondary-section col-xs-12 col-md-4"></div>
-							<div class="terciary-section col-xs-8 col-md-2"></div>
-							<div class="small-section col-xs-4 col-md-1"></div>
-							<div class="terciary-section col-xs-8 col-md-2"></div>
-							<div class="small-section col-xs-4 col-md-1"></div>
-							<div class="terciary-section col-xs-8 col-md-2"></div>
-							<div class="small-section col-xs-4 col-md-1"></div>
-							<div class="secondary-section col-xs-12 col-md-4"></div>
-							<div class="small-section col-xs-4 col-md-1"></div>
-							<div class="terciary-section col-xs-8 col-md-2"></div>
-							<div class="secondary-section col-xs-12 col-md-4"></div>
-							<div class="small-section col-xs-4 col-md-1"></div>
-							<div class="terciary-section col-xs-8 col-md-2"></div>
-							<div class="small-section col-xs-4 col-md-1"></div>
+						<header>
+							<strong>Grid with offset</strong>
+							<div class="right">
+								<small>Use offset to position cells ins a grid. Use allways a  <code>&lt;div class="grid-container"&gt;</code> <br>
+									<strong>e.g.</strong> <code>&lt;div&gt; class="col-xs-1 col-xs-offset-12" </code>
+								</small>
+							</div>
+						</header>
+						<div class="grid-container grid-eg">
+							<div class="col-xs-1 col-xs-offset-12"></div>
+							<div class="col-xs-2 col-xs-offset-11"></div>
+							<div class="col-xs-3 col-xs-offset-10"></div>
+							<div class="col-xs-4 col-xs-offset-9"></div>
+							<div class="col-xs-5 col-xs-offset-8"></div>
+							<div class="col-xs-6 col-xs-offset-7"></div>
+							<div class="col-xs-7 col-xs-offset-6"></div>
+							<div class="col-xs-8 col-xs-offset-5"></div>
+							<div class="col-xs-9 col-xs-offset-4"></div>
+							<div class="col-xs-10 col-xs-offset-3"></div>
+							<div class="col-xs-11 col-xs-offset-2"></div>
+							<div class="col-xs-12"></div>
+						</div>
+					</article>
+					<article>
+						<header>
+							<strong>Grid with cells of multiple sizes</strong>
+							<div class="right">
+								<small>Use xs, sm, md or lg to adapt the grid to diferent sizes of screens<br>
+										<strong>e.g.</strong> <code>&lt;div&gt; class="col-xs-12 col-md-4" </code>
+								</small>
+							</div>
+						</header>
+						<div class="grid-container grid-eg">
+							<div class="col-xs-12 col-md-4"></div>
+							<div class="col-xs-8 col-md-2"></div>
+							<div class="col-xs-8 col-md-2"></div>
+							<div class="col-xs-4 col-md-1"></div>
+							<div class="col-xs-4 col-md-1"></div>
+							<div class="col-xs-4 col-md-1"></div>
+							<div class="col-xs-4 col-md-1"></div>
+							<div class="col-xs-12 col-md-4"></div>
+							<div class="col-xs-8 col-md-2"></div>
+							<div class="col-xs-4 col-md-1"></div>
+							<div class="col-xs-8 col-md-2"></div>
+							<div class="col-xs-4 col-md-1"></div>
+							<div class="col-xs-8 col-md-2"></div>
+							<div class="col-xs-4 col-md-1"></div>
+							<div class="col-xs-12 col-md-4"></div>
+							<div class="col-xs-4 col-md-1"></div>
+							<div class="col-xs-8 col-md-2"></div>
+							<div class="col-xs-12 col-md-4"></div>
+							<div class="col-xs-4 col-md-1"></div>
+							<div class="col-xs-8 col-md-2"></div>
+							<div class="col-xs-4 col-md-1"></div>
 							<div class="col-xs-8 col-md-2"></div>
 							<div class="col-xs-8 col-md-2"></div>
 							<div class="col-xs-4 col-md-1"></div>
 							<div class="col-xs-4 col-md-1"></div>
 							<div class="col-xs-12 col-md-2"></div>
-							<div class="col-xs-12"></div>
 						</div>
 					</article>
 				</section>

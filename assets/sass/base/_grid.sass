@@ -3,17 +3,21 @@
   grid-template-columns: 1fr 1fr
   grid-gap: 1em
 
-#grid
-  *
-    height: 100%
-    width: 100%
-
 .grid-container
   display: grid
   grid-template-columns: repeat(12, 1fr)
   grid-column-gap: 1vmax
   grid-row-gap: 1vmax
   grid-auto-flow: dense
+.grid-eg
+  div
+    background-color: $ligth-grey
+    border: 1px solid black
+    min-height: 2vmax
+    min-width: 100%
+    padding: 0 0.5em
+    text-align: right
+
 
 .col-xs-justify-items-start
   justify-items: start
@@ -27,7 +31,6 @@
 .col-xs-justify-items-stretch
   justify-items: stretch
 
-/*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
 .col-xs-align-items-start
   align-items: start
 
@@ -40,7 +43,6 @@
 .col-xs-align-items-stretch
   align-items: stretch
 
-/*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
 .col-xs-justify-content-start
   justify-content: start
 
@@ -62,7 +64,6 @@
 .col-xs-justify-content-space-evenly
   justify-content: space-evenly
 
-/*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
 .col-xs-align-content-start
   align-content: start
 
@@ -94,74 +95,13 @@
 .col-xs-grid-auto-flow-dense
   grid-auto-flow: dense
 
-.col-xs-1
-  grid-column-end: span 1
+@for $i from 1 through 12
+  .col-xs-#{$i}
+    grid-column-end: span $i
 
-.col-xs-2
-  grid-column-end: span 2
-
-.col-xs-3
-  grid-column-end: span 3
-
-.col-xs-4
-  grid-column-end: span 4
-
-.col-xs-5
-  grid-column-end: span 5
-
-.col-xs-6
-  grid-column-end: span 6
-
-.col-xs-7
-  grid-column-end: span 7
-
-.col-xs-8
-  grid-column-end: span 8
-
-.col-xs-9
-  grid-column-end: span 9
-
-.col-xs-10
-  grid-column-end: span 10
-
-.col-xs-11
-  grid-column-end: span 11
-
-.col-xs-12
-  grid-column-end: span 12
-
-.col-xs-offset-2
-  grid-column-start: 2
-
-.col-xs-offset-3
-  grid-column-start: 3
-
-.col-xs-offset-4
-  grid-column-start: 4
-
-.col-xs-offset-5
-  grid-column-start: 5
-
-.col-xs-offset-6
-  grid-column-start: 6
-
-.col-xs-offset-7
-  grid-column-start: 7
-
-.col-xs-offset-8
-  grid-column-start: 8
-
-.col-xs-offset-9
-  grid-column-start: 9
-
-.col-xs-offset-10
-  grid-column-start: 10
-
-.col-xs-offset-11
-  grid-column-start: 11
-
-.col-xs-offset-12
-  grid-column-start: 12
+@for $i from 1 through 12
+  .col-xs-offset-#{$i}
+    grid-column-start: span $i
 
 .col-xs-justify-self-start
   justify-self: start
@@ -189,7 +129,6 @@
 
 @media only screen and (min-width:48em)
 
-  /*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
   .col-sm-justify-items-start
     justify-items: start
 
@@ -202,7 +141,6 @@
   .col-sm-justify-items-stretch
     justify-items: stretch
 
-  /*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
   .col-sm-align-items-start
     align-items: start
 
@@ -215,7 +153,6 @@
   .col-sm-align-items-stretch
     align-items: stretch
 
-  /*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
   .col-sm-justify-content-start
     justify-content: start
 
@@ -237,7 +174,6 @@
   .col-sm-justify-content-space-evenly
     justify-content: space-evenly
 
-  /*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
   .col-sm-align-content-start
     align-content: start
 
@@ -268,74 +204,13 @@
   .col-sm-grid-auto-flow-dense
     grid-auto-flow: dense
 
-  .col-sm-1
-    grid-column-end: span 1
+  @for $i from 1 through 12
+    .col-sm-#{$i}
+      grid-column-end: span $i
 
-  .col-sm-2
-    grid-column-end: span 2
-
-  .col-sm-3
-    grid-column-end: span 3
-
-  .col-sm-4
-    grid-column-end: span 4
-
-  .col-sm-5
-    grid-column-end: span 5
-
-  .col-sm-6
-    grid-column-end: span 6
-
-  .col-sm-7
-    grid-column-end: span 7
-
-  .col-sm-8
-    grid-column-end: span 8
-
-  .col-sm-9
-    grid-column-end: span 9
-
-  .col-sm-10
-    grid-column-end: span 10
-
-  .col-sm-11
-    grid-column-end: span 11
-
-  .col-sm-12-ms-justify-self:
-    grid-column-end: span 12
-
-  .col-sm-offset-2
-    grid-column-start: 2
-
-  .col-sm-offset-3
-    grid-column-start: 3
-
-  .col-sm-offset-4
-    grid-column-start: 4
-
-  .col-sm-offset-5
-    grid-column-start: 5
-
-  .col-sm-offset-6
-    grid-column-start: 6
-
-  .col-sm-offset-7
-    grid-column-start: 7
-
-  .col-sm-offset-8
-    grid-column-start: 8
-
-  .col-sm-offset-9
-    grid-column-start: 9
-
-  .col-sm-offset-10
-    grid-column-start: 10
-
-  .col-sm-offset-11
-    grid-column-start: 11
-
-  .col-sm-offset-12
-    grid-column-start: 12
+  @for $i from 1 through 12
+    .col-sm-offset-#{$i}
+      grid-column-start: span $i
 
   .col-sm-justify-self-start
     justify-self: start
@@ -363,7 +238,6 @@
 
 @media only screen and (min-width:62em)
 
-  /*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
   .col-md-justify-items-start
     justify-items: start
 
@@ -376,7 +250,6 @@
   .col-md-justify-items-stretch
     justify-items: stretch
 
-  /*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
   .col-md-align-items-start
     align-items: start
 
@@ -389,7 +262,6 @@
   .col-md-align-items-stretch
     align-items: stretch
 
-  /*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
   .col-md-justify-content-start
     justify-content: start
 
@@ -411,7 +283,6 @@
   .col-md-justify-content-space-evenly
     justify-content: space-evenly
 
-  /*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
   .col-md-align-content-start
     align-content: start
 
@@ -442,75 +313,13 @@
   .col-md-grid-auto-flow-dense
     grid-auto-flow: dense
 
-  .col-md-1
-    grid-column-end: span 1
+  @for $i from 1 through 12
+    .col-md-#{$i}
+      grid-column-end: span $i
 
-  .col-md-2
-    grid-column-end: span 2
-
-  .col-md-3
-    grid-column-end: span 3
-
-  .col-md-4
-    grid-column-end: span 4
-
-  .col-md-5
-    grid-column-end: span 5
-
-  .col-md-6
-    grid-column-end: span 6
-
-  .col-md-7
-    grid-column-end: span 7
-
-  .col-md-8
-    grid-column-end: span 8
-
-  .col-md-9
-    grid-column-end: span 9
-
-  .col-md-10
-    grid-column-end: span 10
-
-  .col-md-11
-    grid-column-end: span 11
-
-  .col-md-12-ms-justify-self:
-    grid-column-end: span 12
-
-  .col-md-offset-2
-    grid-column-start: 2
-
-  .col-md-offset-3
-    grid-column-start: 3
-
-  .col-md-offset-4
-    grid-column-start: 4
-
-  .col-md-offset-5
-    grid-column-start: 5
-
-  .col-md-offset-6
-    grid-column-start: 6
-
-  .col-md-offset-7
-    grid-column-start: 7
-
-  .col-md-offset-8
-    grid-column-start: 8
-
-  .col-md-offset-9
-    grid-column-start: 9
-
-  .col-md-offset-10
-    grid-column-start: 10
-
-  .col-md-offset-11
-    grid-column-start: 11
-
-  .col-md-offset-12
-    grid-column-start: 12
-
+  @for $i from 1 through 12
+    .col-md-offset-#{$i}
+      grid-column-start: span $i
 
   .col-md-justify-self-start
     justify-self: start
@@ -538,7 +347,6 @@
 
 @media only screen and (min-width:75em)
 
-  /*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
   .col-lg-justify-items-start
     justify-items: start
 
@@ -551,7 +359,6 @@
   .col-lg-justify-items-stretch
     justify-items: stretch
 
-  /*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
   .col-lg-align-items-start
     align-items: start
 
@@ -564,7 +371,6 @@
   .col-lg-align-items-stretch
     align-items: stretch
 
-  /*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
   .col-lg-justify-content-start
     justify-content: start
 
@@ -586,7 +392,6 @@
   .col-lg-justify-content-space-evenly
     justify-content: space-evenly
 
-  /*IN ORDER FOR THIS TO WORK, ALL ELEMENTS MUST HAVE A DEFINED WIDTH AND HEIGHT*/
   .col-lg-align-content-start
     align-content: start
 
@@ -617,74 +422,13 @@
   .col-lg-grid-auto-flow-dense
     grid-auto-flow: dense
 
-  .col-lg-1
-    grid-column-end: span 1
+  @for $i from 1 through 12
+    .col-lg-#{$i}
+      grid-column-end: span $i
 
-  .col-lg-2
-    grid-column-end: span 2
-
-  .col-lg-3
-    grid-column-end: span 3
-
-  .col-lg-4
-    grid-column-end: span 4
-
-  .col-lg-5
-    grid-column-end: span 5
-
-  .col-lg-6
-    grid-column-end: span 6
-
-  .col-lg-7
-    grid-column-end: span 7
-
-  .col-lg-8
-    grid-column-end: span 8
-
-  .col-lg-9
-    grid-column-end: span 9
-
-  .col-lg-10
-    grid-column-end: span 10
-
-  .col-lg-11
-    grid-column-end: span 11
-
-  .col-lg-12-ms-justify-self:
-    grid-column-end: span 12
-
-  .col-lg-offset-2
-    grid-column-start: 2
-
-  .col-lg-offset-3
-    grid-column-start: 3
-
-  .col-lg-offset-4
-    grid-column-start: 4
-
-  .col-lg-offset-5
-    grid-column-start: 5
-
-  .col-lg-offset-6
-    grid-column-start: 6
-
-  .col-lg-offset-7
-    grid-column-start: 7
-
-  .col-lg-offset-8
-    grid-column-start: 8
-
-  .col-lg-offset-9
-    grid-column-start: 9
-
-  .col-lg-offset-10
-    grid-column-start: 10
-
-  .col-lg-offset-11
-    grid-column-start: 11
-
-  .col-lg-offset-12
-    grid-column-start: 12
+  @for $i from 1 through 12
+    .col-lg-offset-#{$i}
+      grid-column-start: span $i
 
   .col-lg-justify-self-start
     justify-self: start

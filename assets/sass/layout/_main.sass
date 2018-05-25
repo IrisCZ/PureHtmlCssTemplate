@@ -10,9 +10,13 @@ main
   // grid-template-columns: repeat(auto-fit, minmax(30em, 1fr))
 
   header
+    display: flex
     padding-left: 2em
-
-    small
+    margin-bottom: 1em
+    .left
+      align-self: flex-start
+    .right
+      align-self: flex-end
       text-align: right
 
   .no-margin-bottom
