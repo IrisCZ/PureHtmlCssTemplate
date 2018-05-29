@@ -84,7 +84,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* line 9, ../../assets/sass/base/_body.sass */
+/* line 8, ../../assets/sass/base/_body.sass */
 .container {
   color: #272c2f;
   height: 100vh;
@@ -97,31 +97,25 @@ body {
   transition: 2s;
 }
 
-/* line 20, ../../assets/sass/base/_body.sass */
+/* line 19, ../../assets/sass/base/_body.sass */
 .hidden {
   visibility: hidden;
   position: absolute;
 }
 
-/* line 24, ../../assets/sass/base/_body.sass */
+/* line 23, ../../assets/sass/base/_body.sass */
 .card-content {
   padding-top: 1em;
 }
 
-/* line 27, ../../assets/sass/base/_body.sass */
-input:focus {
+/* line 26, ../../assets/sass/base/_body.sass */
+input:focus, select:focus, textarea:focus {
   outline: none;
-  box-shadow: 0 0 3px #457745;
+  border-radius: #869514;
+  box-shadow: 0 0 3px #869514;
 }
 
-/* line 1, ../../assets/sass/base/_grid.sass */
-.col2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-}
-
-/* line 6, ../../assets/sass/base/_grid.sass */
+/* line 2, ../../assets/sass/base/_grid.sass */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -130,1155 +124,1147 @@ input:focus {
   grid-auto-flow: dense;
 }
 
-/* line 13, ../../assets/sass/base/_grid.sass */
+/* line 9, ../../assets/sass/base/_grid.sass */
+.grid-eg {
+  margin-top: 1.5em;
+}
+/* line 11, ../../assets/sass/base/_grid.sass */
 .grid-eg div {
   background-color: #f1f4f5;
   border: 1px solid black;
   min-height: 2vmax;
   min-width: 100%;
-  padding: 0 0.5em;
-  text-align: right;
 }
 
-/* line 22, ../../assets/sass/base/_grid.sass */
+/* line 17, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-items-start {
   justify-items: start;
 }
 
-/* line 25, ../../assets/sass/base/_grid.sass */
+/* line 20, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-items-end {
   justify-items: end;
 }
 
-/* line 28, ../../assets/sass/base/_grid.sass */
+/* line 23, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-items-center {
   justify-items: center;
 }
 
-/* line 31, ../../assets/sass/base/_grid.sass */
+/* line 26, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-items-stretch {
   justify-items: stretch;
 }
 
-/* line 34, ../../assets/sass/base/_grid.sass */
+/* line 29, ../../assets/sass/base/_grid.sass */
 .col-xs-align-items-start {
   align-items: start;
 }
 
-/* line 37, ../../assets/sass/base/_grid.sass */
+/* line 32, ../../assets/sass/base/_grid.sass */
 .col-xs-align-items-end {
   align-items: end;
 }
 
-/* line 40, ../../assets/sass/base/_grid.sass */
+/* line 35, ../../assets/sass/base/_grid.sass */
 .col-xs-align-items-center {
   align-items: center;
 }
 
-/* line 43, ../../assets/sass/base/_grid.sass */
+/* line 38, ../../assets/sass/base/_grid.sass */
 .col-xs-align-items-stretch {
   align-items: stretch;
 }
 
-/* line 46, ../../assets/sass/base/_grid.sass */
+/* line 41, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-content-start {
   justify-content: start;
 }
 
-/* line 49, ../../assets/sass/base/_grid.sass */
+/* line 44, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-content-end {
   justify-content: end;
 }
 
-/* line 52, ../../assets/sass/base/_grid.sass */
+/* line 47, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-content-center {
   justify-content: center;
 }
 
-/* line 55, ../../assets/sass/base/_grid.sass */
+/* line 50, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-content-stretch {
   justify-content: stretch;
 }
 
-/* line 58, ../../assets/sass/base/_grid.sass */
+/* line 53, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-content-space-around {
   justify-content: space-around;
 }
 
-/* line 61, ../../assets/sass/base/_grid.sass */
+/* line 56, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-content-space-between {
   justify-content: space-between;
 }
 
-/* line 64, ../../assets/sass/base/_grid.sass */
+/* line 59, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-content-space-evenly {
   justify-content: space-evenly;
 }
 
-/* line 67, ../../assets/sass/base/_grid.sass */
+/* line 62, ../../assets/sass/base/_grid.sass */
 .col-xs-align-content-start {
   align-content: start;
 }
 
-/* line 70, ../../assets/sass/base/_grid.sass */
+/* line 65, ../../assets/sass/base/_grid.sass */
 .col-xs-align-content-end {
   align-content: end;
 }
 
-/* line 73, ../../assets/sass/base/_grid.sass */
+/* line 68, ../../assets/sass/base/_grid.sass */
 .col-xs-align-content-center {
   align-content: center;
 }
 
-/* line 77, ../../assets/sass/base/_grid.sass */
+/* line 72, ../../assets/sass/base/_grid.sass */
 .col-xs-align-content-stretch {
   align-content: stretch;
 }
 
-/* line 80, ../../assets/sass/base/_grid.sass */
+/* line 75, ../../assets/sass/base/_grid.sass */
 .col-xs-align-content-space-around {
   align-content: space-around;
 }
 
-/* line 83, ../../assets/sass/base/_grid.sass */
+/* line 78, ../../assets/sass/base/_grid.sass */
 .col-xs-align-content-space-between {
   align-content: space-between;
 }
 
-/* line 86, ../../assets/sass/base/_grid.sass */
+/* line 81, ../../assets/sass/base/_grid.sass */
 .col-xs-align-content-space-evenly {
   align-content: space-evenly;
 }
 
-/* line 89, ../../assets/sass/base/_grid.sass */
+/* line 84, ../../assets/sass/base/_grid.sass */
 .col-xs-grid-auto-flow-row {
   grid-auto-flow: row;
 }
 
-/* line 92, ../../assets/sass/base/_grid.sass */
+/* line 87, ../../assets/sass/base/_grid.sass */
 .col-xs-grid-auto-flow-column {
   grid-auto-flow: column;
 }
 
-/* line 95, ../../assets/sass/base/_grid.sass */
+/* line 90, ../../assets/sass/base/_grid.sass */
 .col-xs-grid-auto-flow-dense {
   grid-auto-flow: dense;
 }
 
-/* line 99, ../../assets/sass/base/_grid.sass */
+/* line 94, ../../assets/sass/base/_grid.sass */
 .col-xs-1 {
   grid-column-end: span 1;
 }
 
-/* line 99, ../../assets/sass/base/_grid.sass */
+/* line 94, ../../assets/sass/base/_grid.sass */
 .col-xs-2 {
   grid-column-end: span 2;
 }
 
-/* line 99, ../../assets/sass/base/_grid.sass */
+/* line 94, ../../assets/sass/base/_grid.sass */
 .col-xs-3 {
   grid-column-end: span 3;
 }
 
-/* line 99, ../../assets/sass/base/_grid.sass */
+/* line 94, ../../assets/sass/base/_grid.sass */
 .col-xs-4 {
   grid-column-end: span 4;
 }
 
-/* line 99, ../../assets/sass/base/_grid.sass */
+/* line 94, ../../assets/sass/base/_grid.sass */
 .col-xs-5 {
   grid-column-end: span 5;
 }
 
-/* line 99, ../../assets/sass/base/_grid.sass */
+/* line 94, ../../assets/sass/base/_grid.sass */
 .col-xs-6 {
   grid-column-end: span 6;
 }
 
-/* line 99, ../../assets/sass/base/_grid.sass */
+/* line 94, ../../assets/sass/base/_grid.sass */
 .col-xs-7 {
   grid-column-end: span 7;
 }
 
-/* line 99, ../../assets/sass/base/_grid.sass */
+/* line 94, ../../assets/sass/base/_grid.sass */
 .col-xs-8 {
   grid-column-end: span 8;
 }
 
-/* line 99, ../../assets/sass/base/_grid.sass */
+/* line 94, ../../assets/sass/base/_grid.sass */
 .col-xs-9 {
   grid-column-end: span 9;
 }
 
-/* line 99, ../../assets/sass/base/_grid.sass */
+/* line 94, ../../assets/sass/base/_grid.sass */
 .col-xs-10 {
   grid-column-end: span 10;
 }
 
-/* line 99, ../../assets/sass/base/_grid.sass */
+/* line 94, ../../assets/sass/base/_grid.sass */
 .col-xs-11 {
   grid-column-end: span 11;
 }
 
-/* line 99, ../../assets/sass/base/_grid.sass */
+/* line 94, ../../assets/sass/base/_grid.sass */
 .col-xs-12 {
   grid-column-end: span 12;
 }
 
-/* line 103, ../../assets/sass/base/_grid.sass */
-.col-xs-offset-1 {
-  grid-column-start: span 1;
-}
-
-/* line 103, ../../assets/sass/base/_grid.sass */
+/* line 98, ../../assets/sass/base/_grid.sass */
 .col-xs-offset-2 {
-  grid-column-start: span 2;
+  grid-column-start: 2;
 }
 
-/* line 103, ../../assets/sass/base/_grid.sass */
+/* line 98, ../../assets/sass/base/_grid.sass */
 .col-xs-offset-3 {
-  grid-column-start: span 3;
+  grid-column-start: 3;
 }
 
-/* line 103, ../../assets/sass/base/_grid.sass */
+/* line 98, ../../assets/sass/base/_grid.sass */
 .col-xs-offset-4 {
-  grid-column-start: span 4;
+  grid-column-start: 4;
 }
 
-/* line 103, ../../assets/sass/base/_grid.sass */
+/* line 98, ../../assets/sass/base/_grid.sass */
 .col-xs-offset-5 {
-  grid-column-start: span 5;
+  grid-column-start: 5;
 }
 
-/* line 103, ../../assets/sass/base/_grid.sass */
+/* line 98, ../../assets/sass/base/_grid.sass */
 .col-xs-offset-6 {
-  grid-column-start: span 6;
+  grid-column-start: 6;
 }
 
-/* line 103, ../../assets/sass/base/_grid.sass */
+/* line 98, ../../assets/sass/base/_grid.sass */
 .col-xs-offset-7 {
-  grid-column-start: span 7;
+  grid-column-start: 7;
 }
 
-/* line 103, ../../assets/sass/base/_grid.sass */
+/* line 98, ../../assets/sass/base/_grid.sass */
 .col-xs-offset-8 {
-  grid-column-start: span 8;
+  grid-column-start: 8;
 }
 
-/* line 103, ../../assets/sass/base/_grid.sass */
+/* line 98, ../../assets/sass/base/_grid.sass */
 .col-xs-offset-9 {
-  grid-column-start: span 9;
+  grid-column-start: 9;
 }
 
-/* line 103, ../../assets/sass/base/_grid.sass */
+/* line 98, ../../assets/sass/base/_grid.sass */
 .col-xs-offset-10 {
-  grid-column-start: span 10;
+  grid-column-start: 10;
 }
 
-/* line 103, ../../assets/sass/base/_grid.sass */
+/* line 98, ../../assets/sass/base/_grid.sass */
 .col-xs-offset-11 {
-  grid-column-start: span 11;
+  grid-column-start: 11;
 }
 
-/* line 103, ../../assets/sass/base/_grid.sass */
+/* line 98, ../../assets/sass/base/_grid.sass */
 .col-xs-offset-12 {
-  grid-column-start: span 12;
+  grid-column-start: 12;
 }
 
-/* line 106, ../../assets/sass/base/_grid.sass */
+/* line 101, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-self-start {
   justify-self: start;
 }
 
-/* line 109, ../../assets/sass/base/_grid.sass */
+/* line 104, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-self-end {
   justify-self: end;
 }
 
-/* line 112, ../../assets/sass/base/_grid.sass */
+/* line 107, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-self-center {
   justify-self: center;
 }
 
-/* line 115, ../../assets/sass/base/_grid.sass */
+/* line 110, ../../assets/sass/base/_grid.sass */
 .col-xs-justify-self-stretch {
   justify-self: stretch;
 }
 
-/* line 118, ../../assets/sass/base/_grid.sass */
+/* line 113, ../../assets/sass/base/_grid.sass */
 .col-xs-align-self-start {
   align-self: start;
 }
 
-/* line 121, ../../assets/sass/base/_grid.sass */
+/* line 116, ../../assets/sass/base/_grid.sass */
 .col-xs-align-self-end {
   align-self: end;
 }
 
-/* line 124, ../../assets/sass/base/_grid.sass */
+/* line 119, ../../assets/sass/base/_grid.sass */
 .col-xs-align-self-center {
   align-self: center;
 }
 
-/* line 127, ../../assets/sass/base/_grid.sass */
+/* line 122, ../../assets/sass/base/_grid.sass */
 .col-xs-align-self-stretch {
   align-self: stretch;
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 132, ../../assets/sass/base/_grid.sass */
+  /* line 127, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-items-start {
     justify-items: start;
   }
 
-  /* line 135, ../../assets/sass/base/_grid.sass */
+  /* line 130, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-items-end {
     justify-items: end;
   }
 
-  /* line 138, ../../assets/sass/base/_grid.sass */
+  /* line 133, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-items-center {
     justify-items: center;
   }
 
-  /* line 141, ../../assets/sass/base/_grid.sass */
+  /* line 136, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-items-stretch {
     justify-items: stretch;
   }
 
-  /* line 144, ../../assets/sass/base/_grid.sass */
+  /* line 139, ../../assets/sass/base/_grid.sass */
   .col-sm-align-items-start {
     align-items: start;
   }
 
-  /* line 147, ../../assets/sass/base/_grid.sass */
+  /* line 142, ../../assets/sass/base/_grid.sass */
   .col-sm-align-items-end {
     align-items: end;
   }
 
-  /* line 150, ../../assets/sass/base/_grid.sass */
+  /* line 145, ../../assets/sass/base/_grid.sass */
   .col-sm-align-items-center {
     align-items: center;
   }
 
-  /* line 153, ../../assets/sass/base/_grid.sass */
+  /* line 148, ../../assets/sass/base/_grid.sass */
   .col-sm-align-items-stretch {
     align-items: stretch;
   }
 
-  /* line 156, ../../assets/sass/base/_grid.sass */
+  /* line 151, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-content-start {
     justify-content: start;
   }
 
-  /* line 159, ../../assets/sass/base/_grid.sass */
+  /* line 154, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-content-end {
     justify-content: end;
   }
 
-  /* line 162, ../../assets/sass/base/_grid.sass */
+  /* line 157, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-content-center {
     justify-content: center;
   }
 
-  /* line 165, ../../assets/sass/base/_grid.sass */
+  /* line 160, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-content-stretch {
     justify-content: stretch;
   }
 
-  /* line 168, ../../assets/sass/base/_grid.sass */
+  /* line 163, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-content-space-around {
     justify-content: space-around;
   }
 
-  /* line 171, ../../assets/sass/base/_grid.sass */
+  /* line 166, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-content-space-between {
     justify-content: space-between;
   }
 
-  /* line 174, ../../assets/sass/base/_grid.sass */
+  /* line 169, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-content-space-evenly {
     justify-content: space-evenly;
   }
 
-  /* line 177, ../../assets/sass/base/_grid.sass */
+  /* line 172, ../../assets/sass/base/_grid.sass */
   .col-sm-align-content-start {
     align-content: start;
   }
 
-  /* line 180, ../../assets/sass/base/_grid.sass */
+  /* line 175, ../../assets/sass/base/_grid.sass */
   .col-sm-align-content-end {
     align-content: end;
   }
 
-  /* line 183, ../../assets/sass/base/_grid.sass */
+  /* line 178, ../../assets/sass/base/_grid.sass */
   .col-sm-align-content-center {
     align-content: center;
   }
 
-  /* line 186, ../../assets/sass/base/_grid.sass */
+  /* line 181, ../../assets/sass/base/_grid.sass */
   .col-sm-align-content-stretch {
     align-content: stretch;
   }
 
-  /* line 189, ../../assets/sass/base/_grid.sass */
+  /* line 184, ../../assets/sass/base/_grid.sass */
   .col-sm-align-content-space-around {
     align-content: space-around;
   }
 
-  /* line 192, ../../assets/sass/base/_grid.sass */
+  /* line 187, ../../assets/sass/base/_grid.sass */
   .col-sm-align-content-space-between {
     align-content: space-between;
   }
 
-  /* line 195, ../../assets/sass/base/_grid.sass */
+  /* line 190, ../../assets/sass/base/_grid.sass */
   .col-sm-align-content-space-evenly {
     align-content: space-evenly;
   }
 
-  /* line 198, ../../assets/sass/base/_grid.sass */
+  /* line 193, ../../assets/sass/base/_grid.sass */
   .col-sm-grid-auto-flow-row {
     grid-auto-flow: row;
   }
 
-  /* line 201, ../../assets/sass/base/_grid.sass */
+  /* line 196, ../../assets/sass/base/_grid.sass */
   .col-sm-grid-auto-flow-column {
     grid-auto-flow: column;
   }
 
-  /* line 204, ../../assets/sass/base/_grid.sass */
+  /* line 199, ../../assets/sass/base/_grid.sass */
   .col-sm-grid-auto-flow-dense {
     grid-auto-flow: dense;
   }
 
-  /* line 208, ../../assets/sass/base/_grid.sass */
+  /* line 203, ../../assets/sass/base/_grid.sass */
   .col-sm-1 {
     grid-column-end: span 1;
   }
 
-  /* line 208, ../../assets/sass/base/_grid.sass */
+  /* line 203, ../../assets/sass/base/_grid.sass */
   .col-sm-2 {
     grid-column-end: span 2;
   }
 
-  /* line 208, ../../assets/sass/base/_grid.sass */
+  /* line 203, ../../assets/sass/base/_grid.sass */
   .col-sm-3 {
     grid-column-end: span 3;
   }
 
-  /* line 208, ../../assets/sass/base/_grid.sass */
+  /* line 203, ../../assets/sass/base/_grid.sass */
   .col-sm-4 {
     grid-column-end: span 4;
   }
 
-  /* line 208, ../../assets/sass/base/_grid.sass */
+  /* line 203, ../../assets/sass/base/_grid.sass */
   .col-sm-5 {
     grid-column-end: span 5;
   }
 
-  /* line 208, ../../assets/sass/base/_grid.sass */
+  /* line 203, ../../assets/sass/base/_grid.sass */
   .col-sm-6 {
     grid-column-end: span 6;
   }
 
-  /* line 208, ../../assets/sass/base/_grid.sass */
+  /* line 203, ../../assets/sass/base/_grid.sass */
   .col-sm-7 {
     grid-column-end: span 7;
   }
 
-  /* line 208, ../../assets/sass/base/_grid.sass */
+  /* line 203, ../../assets/sass/base/_grid.sass */
   .col-sm-8 {
     grid-column-end: span 8;
   }
 
-  /* line 208, ../../assets/sass/base/_grid.sass */
+  /* line 203, ../../assets/sass/base/_grid.sass */
   .col-sm-9 {
     grid-column-end: span 9;
   }
 
-  /* line 208, ../../assets/sass/base/_grid.sass */
+  /* line 203, ../../assets/sass/base/_grid.sass */
   .col-sm-10 {
     grid-column-end: span 10;
   }
 
-  /* line 208, ../../assets/sass/base/_grid.sass */
+  /* line 203, ../../assets/sass/base/_grid.sass */
   .col-sm-11 {
     grid-column-end: span 11;
   }
 
-  /* line 208, ../../assets/sass/base/_grid.sass */
+  /* line 203, ../../assets/sass/base/_grid.sass */
   .col-sm-12 {
     grid-column-end: span 12;
   }
 
-  /* line 212, ../../assets/sass/base/_grid.sass */
+  /* line 207, ../../assets/sass/base/_grid.sass */
   .col-sm-offset-1 {
-    grid-column-start: span 1;
+    grid-column-start: 1;
   }
 
-  /* line 212, ../../assets/sass/base/_grid.sass */
+  /* line 207, ../../assets/sass/base/_grid.sass */
   .col-sm-offset-2 {
-    grid-column-start: span 2;
+    grid-column-start: 2;
   }
 
-  /* line 212, ../../assets/sass/base/_grid.sass */
+  /* line 207, ../../assets/sass/base/_grid.sass */
   .col-sm-offset-3 {
-    grid-column-start: span 3;
+    grid-column-start: 3;
   }
 
-  /* line 212, ../../assets/sass/base/_grid.sass */
+  /* line 207, ../../assets/sass/base/_grid.sass */
   .col-sm-offset-4 {
-    grid-column-start: span 4;
+    grid-column-start: 4;
   }
 
-  /* line 212, ../../assets/sass/base/_grid.sass */
+  /* line 207, ../../assets/sass/base/_grid.sass */
   .col-sm-offset-5 {
-    grid-column-start: span 5;
+    grid-column-start: 5;
   }
 
-  /* line 212, ../../assets/sass/base/_grid.sass */
+  /* line 207, ../../assets/sass/base/_grid.sass */
   .col-sm-offset-6 {
-    grid-column-start: span 6;
+    grid-column-start: 6;
   }
 
-  /* line 212, ../../assets/sass/base/_grid.sass */
+  /* line 207, ../../assets/sass/base/_grid.sass */
   .col-sm-offset-7 {
-    grid-column-start: span 7;
+    grid-column-start: 7;
   }
 
-  /* line 212, ../../assets/sass/base/_grid.sass */
+  /* line 207, ../../assets/sass/base/_grid.sass */
   .col-sm-offset-8 {
-    grid-column-start: span 8;
+    grid-column-start: 8;
   }
 
-  /* line 212, ../../assets/sass/base/_grid.sass */
+  /* line 207, ../../assets/sass/base/_grid.sass */
   .col-sm-offset-9 {
-    grid-column-start: span 9;
+    grid-column-start: 9;
   }
 
-  /* line 212, ../../assets/sass/base/_grid.sass */
+  /* line 207, ../../assets/sass/base/_grid.sass */
   .col-sm-offset-10 {
-    grid-column-start: span 10;
+    grid-column-start: 10;
   }
 
-  /* line 212, ../../assets/sass/base/_grid.sass */
+  /* line 207, ../../assets/sass/base/_grid.sass */
   .col-sm-offset-11 {
-    grid-column-start: span 11;
+    grid-column-start: 11;
   }
 
-  /* line 212, ../../assets/sass/base/_grid.sass */
+  /* line 207, ../../assets/sass/base/_grid.sass */
   .col-sm-offset-12 {
-    grid-column-start: span 12;
+    grid-column-start: 12;
   }
 
-  /* line 215, ../../assets/sass/base/_grid.sass */
+  /* line 210, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-self-start {
     justify-self: start;
   }
 
-  /* line 218, ../../assets/sass/base/_grid.sass */
+  /* line 213, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-self-end {
     justify-self: end;
   }
 
-  /* line 221, ../../assets/sass/base/_grid.sass */
+  /* line 216, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-self-center {
     justify-self: center;
   }
 
-  /* line 224, ../../assets/sass/base/_grid.sass */
+  /* line 219, ../../assets/sass/base/_grid.sass */
   .col-sm-justify-self-stretch {
     justify-self: stretch;
   }
 
-  /* line 227, ../../assets/sass/base/_grid.sass */
+  /* line 222, ../../assets/sass/base/_grid.sass */
   .col-sm-align-self-start {
     align-self: start;
   }
 
-  /* line 230, ../../assets/sass/base/_grid.sass */
+  /* line 225, ../../assets/sass/base/_grid.sass */
   .col-sm-align-self-end {
     align-self: end;
   }
 
-  /* line 233, ../../assets/sass/base/_grid.sass */
+  /* line 228, ../../assets/sass/base/_grid.sass */
   .col-sm-align-self-center {
     align-self: center;
   }
 
-  /* line 236, ../../assets/sass/base/_grid.sass */
+  /* line 231, ../../assets/sass/base/_grid.sass */
   .col-sm-align-self-stretch {
     align-self: stretch;
   }
 }
 @media only screen and (min-width: 62em) {
-  /* line 241, ../../assets/sass/base/_grid.sass */
+  /* line 236, ../../assets/sass/base/_grid.sass */
   .col-md-justify-items-start {
     justify-items: start;
   }
 
-  /* line 244, ../../assets/sass/base/_grid.sass */
+  /* line 239, ../../assets/sass/base/_grid.sass */
   .col-md-justify-items-end {
     justify-items: end;
   }
 
-  /* line 247, ../../assets/sass/base/_grid.sass */
+  /* line 242, ../../assets/sass/base/_grid.sass */
   .col-md-justify-items-center {
     justify-items: center;
   }
 
-  /* line 250, ../../assets/sass/base/_grid.sass */
+  /* line 245, ../../assets/sass/base/_grid.sass */
   .col-md-justify-items-stretch {
     justify-items: stretch;
   }
 
-  /* line 253, ../../assets/sass/base/_grid.sass */
+  /* line 248, ../../assets/sass/base/_grid.sass */
   .col-md-align-items-start {
     align-items: start;
   }
 
-  /* line 256, ../../assets/sass/base/_grid.sass */
+  /* line 251, ../../assets/sass/base/_grid.sass */
   .col-md-align-items-end {
     align-items: end;
   }
 
-  /* line 259, ../../assets/sass/base/_grid.sass */
+  /* line 254, ../../assets/sass/base/_grid.sass */
   .col-md-align-items-center {
     align-items: center;
   }
 
-  /* line 262, ../../assets/sass/base/_grid.sass */
+  /* line 257, ../../assets/sass/base/_grid.sass */
   .col-md-align-items-stretch {
     align-items: stretch;
   }
 
-  /* line 265, ../../assets/sass/base/_grid.sass */
+  /* line 260, ../../assets/sass/base/_grid.sass */
   .col-md-justify-content-start {
     justify-content: start;
   }
 
-  /* line 268, ../../assets/sass/base/_grid.sass */
+  /* line 263, ../../assets/sass/base/_grid.sass */
   .col-md-justify-content-end {
     justify-content: end;
   }
 
-  /* line 271, ../../assets/sass/base/_grid.sass */
+  /* line 266, ../../assets/sass/base/_grid.sass */
   .col-md-justify-content-center {
     justify-content: center;
   }
 
-  /* line 274, ../../assets/sass/base/_grid.sass */
+  /* line 269, ../../assets/sass/base/_grid.sass */
   .col-md-justify-content-stretch {
     justify-content: stretch;
   }
 
-  /* line 277, ../../assets/sass/base/_grid.sass */
+  /* line 272, ../../assets/sass/base/_grid.sass */
   .col-md-justify-content-space-around {
     justify-content: space-around;
   }
 
-  /* line 280, ../../assets/sass/base/_grid.sass */
+  /* line 275, ../../assets/sass/base/_grid.sass */
   .col-md-justify-content-space-between {
     justify-content: space-between;
   }
 
-  /* line 283, ../../assets/sass/base/_grid.sass */
+  /* line 278, ../../assets/sass/base/_grid.sass */
   .col-md-justify-content-space-evenly {
     justify-content: space-evenly;
   }
 
-  /* line 286, ../../assets/sass/base/_grid.sass */
+  /* line 281, ../../assets/sass/base/_grid.sass */
   .col-md-align-content-start {
     align-content: start;
   }
 
-  /* line 289, ../../assets/sass/base/_grid.sass */
+  /* line 284, ../../assets/sass/base/_grid.sass */
   .col-md-align-content-end {
     align-content: end;
   }
 
-  /* line 292, ../../assets/sass/base/_grid.sass */
+  /* line 287, ../../assets/sass/base/_grid.sass */
   .col-md-align-content-center {
     align-content: center;
   }
 
-  /* line 295, ../../assets/sass/base/_grid.sass */
+  /* line 290, ../../assets/sass/base/_grid.sass */
   .col-md-align-content-stretch {
     align-content: stretch;
   }
 
-  /* line 298, ../../assets/sass/base/_grid.sass */
+  /* line 293, ../../assets/sass/base/_grid.sass */
   .col-md-align-content-space-around {
     align-content: space-around;
   }
 
-  /* line 301, ../../assets/sass/base/_grid.sass */
+  /* line 296, ../../assets/sass/base/_grid.sass */
   .col-md-align-content-space-between {
     align-content: space-between;
   }
 
-  /* line 304, ../../assets/sass/base/_grid.sass */
+  /* line 299, ../../assets/sass/base/_grid.sass */
   .col-md-align-content-space-evenly {
     align-content: space-evenly;
   }
 
-  /* line 307, ../../assets/sass/base/_grid.sass */
+  /* line 302, ../../assets/sass/base/_grid.sass */
   .col-md-grid-auto-flow-row {
     grid-auto-flow: row;
   }
 
-  /* line 310, ../../assets/sass/base/_grid.sass */
+  /* line 305, ../../assets/sass/base/_grid.sass */
   .col-md-grid-auto-flow-column {
     grid-auto-flow: column;
   }
 
-  /* line 313, ../../assets/sass/base/_grid.sass */
+  /* line 308, ../../assets/sass/base/_grid.sass */
   .col-md-grid-auto-flow-dense {
     grid-auto-flow: dense;
   }
 
-  /* line 317, ../../assets/sass/base/_grid.sass */
+  /* line 312, ../../assets/sass/base/_grid.sass */
   .col-md-1 {
     grid-column-end: span 1;
   }
 
-  /* line 317, ../../assets/sass/base/_grid.sass */
+  /* line 312, ../../assets/sass/base/_grid.sass */
   .col-md-2 {
     grid-column-end: span 2;
   }
 
-  /* line 317, ../../assets/sass/base/_grid.sass */
+  /* line 312, ../../assets/sass/base/_grid.sass */
   .col-md-3 {
     grid-column-end: span 3;
   }
 
-  /* line 317, ../../assets/sass/base/_grid.sass */
+  /* line 312, ../../assets/sass/base/_grid.sass */
   .col-md-4 {
     grid-column-end: span 4;
   }
 
-  /* line 317, ../../assets/sass/base/_grid.sass */
+  /* line 312, ../../assets/sass/base/_grid.sass */
   .col-md-5 {
     grid-column-end: span 5;
   }
 
-  /* line 317, ../../assets/sass/base/_grid.sass */
+  /* line 312, ../../assets/sass/base/_grid.sass */
   .col-md-6 {
     grid-column-end: span 6;
   }
 
-  /* line 317, ../../assets/sass/base/_grid.sass */
+  /* line 312, ../../assets/sass/base/_grid.sass */
   .col-md-7 {
     grid-column-end: span 7;
   }
 
-  /* line 317, ../../assets/sass/base/_grid.sass */
+  /* line 312, ../../assets/sass/base/_grid.sass */
   .col-md-8 {
     grid-column-end: span 8;
   }
 
-  /* line 317, ../../assets/sass/base/_grid.sass */
+  /* line 312, ../../assets/sass/base/_grid.sass */
   .col-md-9 {
     grid-column-end: span 9;
   }
 
-  /* line 317, ../../assets/sass/base/_grid.sass */
+  /* line 312, ../../assets/sass/base/_grid.sass */
   .col-md-10 {
     grid-column-end: span 10;
   }
 
-  /* line 317, ../../assets/sass/base/_grid.sass */
+  /* line 312, ../../assets/sass/base/_grid.sass */
   .col-md-11 {
     grid-column-end: span 11;
   }
 
-  /* line 317, ../../assets/sass/base/_grid.sass */
+  /* line 312, ../../assets/sass/base/_grid.sass */
   .col-md-12 {
     grid-column-end: span 12;
   }
 
-  /* line 321, ../../assets/sass/base/_grid.sass */
-  .col-md-offset-1 {
-    grid-column-start: span 1;
-  }
-
-  /* line 321, ../../assets/sass/base/_grid.sass */
+  /* line 316, ../../assets/sass/base/_grid.sass */
   .col-md-offset-2 {
-    grid-column-start: span 2;
+    grid-column-start: 2;
   }
 
-  /* line 321, ../../assets/sass/base/_grid.sass */
+  /* line 316, ../../assets/sass/base/_grid.sass */
   .col-md-offset-3 {
-    grid-column-start: span 3;
+    grid-column-start: 3;
   }
 
-  /* line 321, ../../assets/sass/base/_grid.sass */
+  /* line 316, ../../assets/sass/base/_grid.sass */
   .col-md-offset-4 {
-    grid-column-start: span 4;
+    grid-column-start: 4;
   }
 
-  /* line 321, ../../assets/sass/base/_grid.sass */
+  /* line 316, ../../assets/sass/base/_grid.sass */
   .col-md-offset-5 {
-    grid-column-start: span 5;
+    grid-column-start: 5;
   }
 
-  /* line 321, ../../assets/sass/base/_grid.sass */
+  /* line 316, ../../assets/sass/base/_grid.sass */
   .col-md-offset-6 {
-    grid-column-start: span 6;
+    grid-column-start: 6;
   }
 
-  /* line 321, ../../assets/sass/base/_grid.sass */
+  /* line 316, ../../assets/sass/base/_grid.sass */
   .col-md-offset-7 {
-    grid-column-start: span 7;
+    grid-column-start: 7;
   }
 
-  /* line 321, ../../assets/sass/base/_grid.sass */
+  /* line 316, ../../assets/sass/base/_grid.sass */
   .col-md-offset-8 {
-    grid-column-start: span 8;
+    grid-column-start: 8;
   }
 
-  /* line 321, ../../assets/sass/base/_grid.sass */
+  /* line 316, ../../assets/sass/base/_grid.sass */
   .col-md-offset-9 {
-    grid-column-start: span 9;
+    grid-column-start: 9;
   }
 
-  /* line 321, ../../assets/sass/base/_grid.sass */
+  /* line 316, ../../assets/sass/base/_grid.sass */
   .col-md-offset-10 {
-    grid-column-start: span 10;
+    grid-column-start: 10;
   }
 
-  /* line 321, ../../assets/sass/base/_grid.sass */
+  /* line 316, ../../assets/sass/base/_grid.sass */
   .col-md-offset-11 {
-    grid-column-start: span 11;
+    grid-column-start: 11;
   }
 
-  /* line 321, ../../assets/sass/base/_grid.sass */
+  /* line 316, ../../assets/sass/base/_grid.sass */
   .col-md-offset-12 {
-    grid-column-start: span 12;
+    grid-column-start: 12;
   }
 
-  /* line 324, ../../assets/sass/base/_grid.sass */
+  /* line 319, ../../assets/sass/base/_grid.sass */
   .col-md-justify-self-start {
     justify-self: start;
   }
 
-  /* line 327, ../../assets/sass/base/_grid.sass */
+  /* line 322, ../../assets/sass/base/_grid.sass */
   .col-md-justify-self-end {
     justify-self: end;
   }
 
-  /* line 330, ../../assets/sass/base/_grid.sass */
+  /* line 325, ../../assets/sass/base/_grid.sass */
   .col-md-justify-self-center {
     justify-self: center;
   }
 
-  /* line 333, ../../assets/sass/base/_grid.sass */
+  /* line 328, ../../assets/sass/base/_grid.sass */
   .col-md-justify-self-stretch {
     justify-self: stretch;
   }
 
-  /* line 336, ../../assets/sass/base/_grid.sass */
+  /* line 331, ../../assets/sass/base/_grid.sass */
   .col-md-align-self-start {
     align-self: start;
   }
 
-  /* line 339, ../../assets/sass/base/_grid.sass */
+  /* line 334, ../../assets/sass/base/_grid.sass */
   .col-md-align-self-end {
     align-self: end;
   }
 
-  /* line 342, ../../assets/sass/base/_grid.sass */
+  /* line 337, ../../assets/sass/base/_grid.sass */
   .col-md-align-self-center {
     align-self: center;
   }
 
-  /* line 345, ../../assets/sass/base/_grid.sass */
+  /* line 340, ../../assets/sass/base/_grid.sass */
   .col-md-align-self-stretch {
     align-self: stretch;
   }
 }
 @media only screen and (min-width: 75em) {
-  /* line 350, ../../assets/sass/base/_grid.sass */
+  /* line 345, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-items-start {
     justify-items: start;
   }
 
-  /* line 353, ../../assets/sass/base/_grid.sass */
+  /* line 348, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-items-end {
     justify-items: end;
   }
 
-  /* line 356, ../../assets/sass/base/_grid.sass */
+  /* line 351, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-items-center {
     justify-items: center;
   }
 
-  /* line 359, ../../assets/sass/base/_grid.sass */
+  /* line 354, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-items-stretch {
     justify-items: stretch;
   }
 
-  /* line 362, ../../assets/sass/base/_grid.sass */
+  /* line 357, ../../assets/sass/base/_grid.sass */
   .col-lg-align-items-start {
     align-items: start;
   }
 
-  /* line 365, ../../assets/sass/base/_grid.sass */
+  /* line 360, ../../assets/sass/base/_grid.sass */
   .col-lg-align-items-end {
     align-items: end;
   }
 
-  /* line 368, ../../assets/sass/base/_grid.sass */
+  /* line 363, ../../assets/sass/base/_grid.sass */
   .col-lg-align-items-center {
     align-items: center;
   }
 
-  /* line 371, ../../assets/sass/base/_grid.sass */
+  /* line 366, ../../assets/sass/base/_grid.sass */
   .col-lg-align-items-stretch {
     align-items: stretch;
   }
 
-  /* line 374, ../../assets/sass/base/_grid.sass */
+  /* line 369, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-content-start {
     justify-content: start;
   }
 
-  /* line 377, ../../assets/sass/base/_grid.sass */
+  /* line 372, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-content-end {
     justify-content: end;
   }
 
-  /* line 380, ../../assets/sass/base/_grid.sass */
+  /* line 375, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-content-center {
     justify-content: center;
   }
 
-  /* line 383, ../../assets/sass/base/_grid.sass */
+  /* line 378, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-content-stretch {
     justify-content: stretch;
   }
 
-  /* line 386, ../../assets/sass/base/_grid.sass */
+  /* line 381, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-content-space-around {
     justify-content: space-around;
   }
 
-  /* line 389, ../../assets/sass/base/_grid.sass */
+  /* line 384, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-content-space-between {
     justify-content: space-between;
   }
 
-  /* line 392, ../../assets/sass/base/_grid.sass */
+  /* line 387, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-content-space-evenly {
     justify-content: space-evenly;
   }
 
-  /* line 395, ../../assets/sass/base/_grid.sass */
+  /* line 390, ../../assets/sass/base/_grid.sass */
   .col-lg-align-content-start {
     align-content: start;
   }
 
-  /* line 398, ../../assets/sass/base/_grid.sass */
+  /* line 393, ../../assets/sass/base/_grid.sass */
   .col-lg-align-content-end {
     align-content: end;
   }
 
-  /* line 401, ../../assets/sass/base/_grid.sass */
+  /* line 396, ../../assets/sass/base/_grid.sass */
   .col-lg-align-content-center {
     align-content: center;
   }
 
-  /* line 404, ../../assets/sass/base/_grid.sass */
+  /* line 399, ../../assets/sass/base/_grid.sass */
   .col-lg-align-content-stretch {
     align-content: stretch;
   }
 
-  /* line 407, ../../assets/sass/base/_grid.sass */
+  /* line 402, ../../assets/sass/base/_grid.sass */
   .col-lg-align-content-space-around {
     align-content: space-around;
   }
 
-  /* line 410, ../../assets/sass/base/_grid.sass */
+  /* line 405, ../../assets/sass/base/_grid.sass */
   .col-lg-align-content-space-between {
     align-content: space-between;
   }
 
-  /* line 413, ../../assets/sass/base/_grid.sass */
+  /* line 408, ../../assets/sass/base/_grid.sass */
   .col-lg-align-content-space-evenly {
     align-content: space-evenly;
   }
 
-  /* line 416, ../../assets/sass/base/_grid.sass */
+  /* line 411, ../../assets/sass/base/_grid.sass */
   .col-lg-grid-auto-flow-row {
     grid-auto-flow: row;
   }
 
-  /* line 419, ../../assets/sass/base/_grid.sass */
+  /* line 414, ../../assets/sass/base/_grid.sass */
   .col-lg-grid-auto-flow-column {
     grid-auto-flow: column;
   }
 
-  /* line 422, ../../assets/sass/base/_grid.sass */
+  /* line 417, ../../assets/sass/base/_grid.sass */
   .col-lg-grid-auto-flow-dense {
     grid-auto-flow: dense;
   }
 
-  /* line 426, ../../assets/sass/base/_grid.sass */
+  /* line 421, ../../assets/sass/base/_grid.sass */
   .col-lg-1 {
     grid-column-end: span 1;
   }
 
-  /* line 426, ../../assets/sass/base/_grid.sass */
+  /* line 421, ../../assets/sass/base/_grid.sass */
   .col-lg-2 {
     grid-column-end: span 2;
   }
 
-  /* line 426, ../../assets/sass/base/_grid.sass */
+  /* line 421, ../../assets/sass/base/_grid.sass */
   .col-lg-3 {
     grid-column-end: span 3;
   }
 
-  /* line 426, ../../assets/sass/base/_grid.sass */
+  /* line 421, ../../assets/sass/base/_grid.sass */
   .col-lg-4 {
     grid-column-end: span 4;
   }
 
-  /* line 426, ../../assets/sass/base/_grid.sass */
+  /* line 421, ../../assets/sass/base/_grid.sass */
   .col-lg-5 {
     grid-column-end: span 5;
   }
 
-  /* line 426, ../../assets/sass/base/_grid.sass */
+  /* line 421, ../../assets/sass/base/_grid.sass */
   .col-lg-6 {
     grid-column-end: span 6;
   }
 
-  /* line 426, ../../assets/sass/base/_grid.sass */
+  /* line 421, ../../assets/sass/base/_grid.sass */
   .col-lg-7 {
     grid-column-end: span 7;
   }
 
-  /* line 426, ../../assets/sass/base/_grid.sass */
+  /* line 421, ../../assets/sass/base/_grid.sass */
   .col-lg-8 {
     grid-column-end: span 8;
   }
 
-  /* line 426, ../../assets/sass/base/_grid.sass */
+  /* line 421, ../../assets/sass/base/_grid.sass */
   .col-lg-9 {
     grid-column-end: span 9;
   }
 
-  /* line 426, ../../assets/sass/base/_grid.sass */
+  /* line 421, ../../assets/sass/base/_grid.sass */
   .col-lg-10 {
     grid-column-end: span 10;
   }
 
-  /* line 426, ../../assets/sass/base/_grid.sass */
+  /* line 421, ../../assets/sass/base/_grid.sass */
   .col-lg-11 {
     grid-column-end: span 11;
   }
 
-  /* line 426, ../../assets/sass/base/_grid.sass */
+  /* line 421, ../../assets/sass/base/_grid.sass */
   .col-lg-12 {
     grid-column-end: span 12;
   }
 
-  /* line 430, ../../assets/sass/base/_grid.sass */
+  /* line 425, ../../assets/sass/base/_grid.sass */
   .col-lg-offset-1 {
-    grid-column-start: span 1;
+    grid-column-start: 1;
   }
 
-  /* line 430, ../../assets/sass/base/_grid.sass */
+  /* line 425, ../../assets/sass/base/_grid.sass */
   .col-lg-offset-2 {
-    grid-column-start: span 2;
+    grid-column-start: 2;
   }
 
-  /* line 430, ../../assets/sass/base/_grid.sass */
+  /* line 425, ../../assets/sass/base/_grid.sass */
   .col-lg-offset-3 {
-    grid-column-start: span 3;
+    grid-column-start: 3;
   }
 
-  /* line 430, ../../assets/sass/base/_grid.sass */
+  /* line 425, ../../assets/sass/base/_grid.sass */
   .col-lg-offset-4 {
-    grid-column-start: span 4;
+    grid-column-start: 4;
   }
 
-  /* line 430, ../../assets/sass/base/_grid.sass */
+  /* line 425, ../../assets/sass/base/_grid.sass */
   .col-lg-offset-5 {
-    grid-column-start: span 5;
+    grid-column-start: 5;
   }
 
-  /* line 430, ../../assets/sass/base/_grid.sass */
+  /* line 425, ../../assets/sass/base/_grid.sass */
   .col-lg-offset-6 {
-    grid-column-start: span 6;
+    grid-column-start: 6;
   }
 
-  /* line 430, ../../assets/sass/base/_grid.sass */
+  /* line 425, ../../assets/sass/base/_grid.sass */
   .col-lg-offset-7 {
-    grid-column-start: span 7;
+    grid-column-start: 7;
   }
 
-  /* line 430, ../../assets/sass/base/_grid.sass */
+  /* line 425, ../../assets/sass/base/_grid.sass */
   .col-lg-offset-8 {
-    grid-column-start: span 8;
+    grid-column-start: 8;
   }
 
-  /* line 430, ../../assets/sass/base/_grid.sass */
+  /* line 425, ../../assets/sass/base/_grid.sass */
   .col-lg-offset-9 {
-    grid-column-start: span 9;
+    grid-column-start: 9;
   }
 
-  /* line 430, ../../assets/sass/base/_grid.sass */
+  /* line 425, ../../assets/sass/base/_grid.sass */
   .col-lg-offset-10 {
-    grid-column-start: span 10;
+    grid-column-start: 10;
   }
 
-  /* line 430, ../../assets/sass/base/_grid.sass */
+  /* line 425, ../../assets/sass/base/_grid.sass */
   .col-lg-offset-11 {
-    grid-column-start: span 11;
+    grid-column-start: 11;
   }
 
-  /* line 430, ../../assets/sass/base/_grid.sass */
+  /* line 425, ../../assets/sass/base/_grid.sass */
   .col-lg-offset-12 {
-    grid-column-start: span 12;
+    grid-column-start: 12;
   }
 
-  /* line 433, ../../assets/sass/base/_grid.sass */
+  /* line 428, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-self-start {
     justify-self: start;
   }
 
-  /* line 436, ../../assets/sass/base/_grid.sass */
+  /* line 431, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-self-end {
     justify-self: end;
   }
 
-  /* line 439, ../../assets/sass/base/_grid.sass */
+  /* line 434, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-self-center {
     justify-self: center;
   }
 
-  /* line 442, ../../assets/sass/base/_grid.sass */
+  /* line 437, ../../assets/sass/base/_grid.sass */
   .col-lg-justify-self-stretch {
     justify-self: stretch;
   }
 
-  /* line 445, ../../assets/sass/base/_grid.sass */
+  /* line 440, ../../assets/sass/base/_grid.sass */
   .col-lg-align-self-start {
     align-self: start;
   }
 
-  /* line 448, ../../assets/sass/base/_grid.sass */
+  /* line 443, ../../assets/sass/base/_grid.sass */
   .col-lg-align-self-end {
     align-self: end;
   }
 
-  /* line 451, ../../assets/sass/base/_grid.sass */
+  /* line 446, ../../assets/sass/base/_grid.sass */
   .col-lg-align-self-center {
     align-self: center;
   }
 
-  /* line 454, ../../assets/sass/base/_grid.sass */
+  /* line 449, ../../assets/sass/base/_grid.sass */
   .col-lg-align-self-stretch {
     align-self: stretch;
   }
@@ -1343,26 +1329,45 @@ code {
 header {
   background-color: #f1f4f5;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  grid-column: aside-start/end;
-  grid-row: start/main-start;
   display: flex;
   justify-content: space-between;
   padding: 0.5em;
   z-index: 1;
 }
+
 /* line 10, ../../assets/sass/layout/_header.sass */
-header h1, header h2 {
+.container .block > header {
+  margin-bottom: 1em;
+}
+/* line 12, ../../assets/sass/layout/_header.sass */
+.container .block > header .left {
+  align-self: flex-start;
+}
+/* line 14, ../../assets/sass/layout/_header.sass */
+.container .block > header .right {
+  align-self: flex-end;
+  max-width: 75%;
+  text-align: right;
+}
+/* line 18, ../../assets/sass/layout/_header.sass */
+.container > header {
+  grid-column: aside-start/end;
+  grid-row: start/main-start;
+  padding-left: 1.5em;
+}
+/* line 22, ../../assets/sass/layout/_header.sass */
+.container > header h1, .container > header h2 {
   margin-bottom: 0;
 }
-/* line 13, ../../assets/sass/layout/_header.sass */
-header .inline {
+/* line 25, ../../assets/sass/layout/_header.sass */
+.container > header .inline {
   align-items: center;
   display: flex;
   justify-content: flex-end;
   position: relative;
 }
-/* line 18, ../../assets/sass/layout/_header.sass */
-header .icon {
+/* line 30, ../../assets/sass/layout/_header.sass */
+.container > header .icon {
   align-items: center;
   background-color: #cad04a;
   border-radius: 50%;
@@ -1376,8 +1381,8 @@ header .icon {
   position: relative;
   width: 2em;
 }
-/* line 31, ../../assets/sass/layout/_header.sass */
-header .icon .badge {
+/* line 43, ../../assets/sass/layout/_header.sass */
+.container > header .icon .badge {
   background-color: #f1f4f5;
   border: 2px solid #457745;
   border-radius: 50%;
@@ -1388,22 +1393,22 @@ header .icon .badge {
   left: 1.6em;
   padding: 0.2em 0.4em;
 }
-/* line 41, ../../assets/sass/layout/_header.sass */
-header .icon .badge.error {
+/* line 53, ../../assets/sass/layout/_header.sass */
+.container > header .icon .badge.error {
   border: 2px solid #951a14;
   color: #951a14;
 }
-/* line 45, ../../assets/sass/layout/_header.sass */
-header .search {
+/* line 57, ../../assets/sass/layout/_header.sass */
+.container > header .search {
   position: relative;
   direction: rtl;
 }
-/* line 48, ../../assets/sass/layout/_header.sass */
-header .search-icon {
+/* line 60, ../../assets/sass/layout/_header.sass */
+.container > header .search-icon {
   z-index: 1;
 }
-/* line 50, ../../assets/sass/layout/_header.sass */
-header .search-input {
+/* line 62, ../../assets/sass/layout/_header.sass */
+.container > header .search-input {
   border-radius: 1.5em;
   border: 1px solid #cad04a;
   height: 2.4rem;
@@ -1417,21 +1422,21 @@ header .search-input {
   width: 3em;
   z-index: 0;
 }
-/* line 63, ../../assets/sass/layout/_header.sass */
-header #open-search:checked + .search-input {
+/* line 75, ../../assets/sass/layout/_header.sass */
+.container > header #open-search:checked + .search-input {
   width: 30em;
   visibility: visible;
 }
-/* line 67, ../../assets/sass/layout/_header.sass */
-header .mail-options {
+/* line 79, ../../assets/sass/layout/_header.sass */
+.container > header .mail-options {
   max-height: 3em;
   overflow: hidden;
   position: absolute;
   transition: max-height 1.5s ease-in-out;
   visibility: hidden;
 }
-/* line 73, ../../assets/sass/layout/_header.sass */
-header #open-mail:checked + .mail-options {
+/* line 85, ../../assets/sass/layout/_header.sass */
+.container > header #open-mail:checked + .mail-options {
   background-color: #272c2f;
   color: #f1f4f5;
   display: flex;
@@ -1446,34 +1451,34 @@ header #open-mail:checked + .mail-options {
   z-index: 0;
 }
 /* line 22, ../../assets/sass/base/_mixins.sass */
-header #open-mail:checked + .mail-options li {
+.container > header #open-mail:checked + .mail-options li {
   border-bottom: 1px solid #cad04a;
   padding: 1em;
 }
 /* line 25, ../../assets/sass/base/_mixins.sass */
-header #open-mail:checked + .mail-options li:last-child {
+.container > header #open-mail:checked + .mail-options li:last-child {
   border-bottom: none;
 }
 /* line 27, ../../assets/sass/base/_mixins.sass */
-header #open-mail:checked + .mail-options li .item-title {
+.container > header #open-mail:checked + .mail-options li .item-title {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 /* line 31, ../../assets/sass/base/_mixins.sass */
-header #open-mail:checked + .mail-options li .item-title .title-img {
+.container > header #open-mail:checked + .mail-options li .item-title .title-img {
   border-radius: 50%;
   margin: 0 0.5rem 0.5rem 0;
 }
 /* line 34, ../../assets/sass/base/_mixins.sass */
-header #open-mail:checked + .mail-options li .item-title .title-description {
+.container > header #open-mail:checked + .mail-options li .item-title .title-description {
   display: block;
   color: #cad04a;
   font-weight: 900;
   margin-bottom: 0.5em;
 }
 /* line 39, ../../assets/sass/base/_mixins.sass */
-header #open-mail:checked + .mail-options li .message {
+.container > header #open-mail:checked + .mail-options li .message {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -1483,20 +1488,20 @@ header #open-mail:checked + .mail-options li .message {
   max-height: 2rem;
   margin-bottom: 0;
 }
-/* line 76, ../../assets/sass/layout/_header.sass */
-header .notification-options {
+/* line 88, ../../assets/sass/layout/_header.sass */
+.container > header .notification-options {
   max-height: 3em;
   overflow: hidden;
   position: absolute;
   transition: max-height 1.5s ease-in-out;
   visibility: hidden;
 }
-/* line 82, ../../assets/sass/layout/_header.sass */
-header .notification-options li {
+/* line 94, ../../assets/sass/layout/_header.sass */
+.container > header .notification-options li {
   display: flex;
 }
-/* line 84, ../../assets/sass/layout/_header.sass */
-header #open-notification:checked + .notification-options {
+/* line 96, ../../assets/sass/layout/_header.sass */
+.container > header #open-notification:checked + .notification-options {
   background-color: #272c2f;
   color: #f1f4f5;
   display: flex;
@@ -1511,34 +1516,34 @@ header #open-notification:checked + .notification-options {
   z-index: 0;
 }
 /* line 22, ../../assets/sass/base/_mixins.sass */
-header #open-notification:checked + .notification-options li {
+.container > header #open-notification:checked + .notification-options li {
   border-bottom: 1px solid #cad04a;
   padding: 1em;
 }
 /* line 25, ../../assets/sass/base/_mixins.sass */
-header #open-notification:checked + .notification-options li:last-child {
+.container > header #open-notification:checked + .notification-options li:last-child {
   border-bottom: none;
 }
 /* line 27, ../../assets/sass/base/_mixins.sass */
-header #open-notification:checked + .notification-options li .item-title {
+.container > header #open-notification:checked + .notification-options li .item-title {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 /* line 31, ../../assets/sass/base/_mixins.sass */
-header #open-notification:checked + .notification-options li .item-title .title-img {
+.container > header #open-notification:checked + .notification-options li .item-title .title-img {
   border-radius: 50%;
   margin: 0 0.5rem 0.5rem 0;
 }
 /* line 34, ../../assets/sass/base/_mixins.sass */
-header #open-notification:checked + .notification-options li .item-title .title-description {
+.container > header #open-notification:checked + .notification-options li .item-title .title-description {
   display: block;
   color: #cad04a;
   font-weight: 900;
   margin-bottom: 0.5em;
 }
 /* line 39, ../../assets/sass/base/_mixins.sass */
-header #open-notification:checked + .notification-options li .message {
+.container > header #open-notification:checked + .notification-options li .message {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -1548,20 +1553,19 @@ header #open-notification:checked + .notification-options li .message {
   max-height: 2rem;
   margin-bottom: 0;
 }
-/* line 87, ../../assets/sass/layout/_header.sass */
-header .user {
+/* line 99, ../../assets/sass/layout/_header.sass */
+.container > header .user {
   border: 2px solid #869514;
   box-sizing: content-box;
   height: 100%;
 }
-/* line 91, ../../assets/sass/layout/_header.sass */
-header .user img {
+/* line 103, ../../assets/sass/layout/_header.sass */
+.container > header .user img {
   height: 4em;
   width: 4em;
 }
-
-/* line 95, ../../assets/sass/layout/_header.sass */
-.leaned {
+/* line 107, ../../assets/sass/layout/_header.sass */
+.container .leaned {
   transform: rotate(-3deg) translate(14em);
   color: #cad04a;
 }
@@ -1669,15 +1673,15 @@ header .user img {
 #open-aside:checked + .container .navbar ul.nav-items .menu-item:hover {
   border-bottom: 2px solid #cad04a;
 }
-/* line 75, ../../assets/sass/layout/_navbar.sass */
+/* line 74, ../../assets/sass/layout/_navbar.sass */
+#open-aside:checked + .container .navbar ul.nav-items .menu-item em {
+  margin: 0;
+}
+/* line 77, ../../assets/sass/layout/_navbar.sass */
 #open-aside:checked + .container .navbar ul.nav-items .menu-item .menu-title:hover::after {
   content: none;
 }
-/* line 77, ../../assets/sass/layout/_navbar.sass */
-#open-aside:checked + .container .navbar ul.nav-items .menu-item .menu-title > em {
-  margin: 0;
-}
-/* line 79, ../../assets/sass/layout/_navbar.sass */
+/* line 80, ../../assets/sass/layout/_navbar.sass */
 #open-aside:checked + .container .navbar ul.nav-items .options {
   display: flex;
   flex-direction: column;
@@ -1687,7 +1691,7 @@ header .user img {
   position: absolute;
   width: auto;
 }
-/* line 88, ../../assets/sass/layout/_navbar.sass */
+/* line 89, ../../assets/sass/layout/_navbar.sass */
 #open-aside:checked + .container .navbar ul.nav-items input:checked + .options {
   transition: margin-left 0.5s ease-in-out;
   border-top: 2px solid #cad04a;
@@ -1700,7 +1704,7 @@ header .user img {
   width: 10em;
   z-index: 0;
 }
-/* line 93, ../../assets/sass/layout/_navbar.sass */
+/* line 94, ../../assets/sass/layout/_navbar.sass */
 #open-aside:checked + .container .navbar ul.nav-items input:checked + .options .title-dropright {
   cursor: default;
   display: block;
@@ -1710,6 +1714,10 @@ header .user img {
   visibility: visible;
 }
 /* line 101, ../../assets/sass/layout/_navbar.sass */
+#open-aside:checked + .container .navbar ul.nav-items input:checked + .options em {
+  margin-right: 0.5em;
+}
+/* line 104, ../../assets/sass/layout/_navbar.sass */
 #open-aside:checked + .container .navbar .toggle-button {
   border-left: 0.5em solid #cad04a;
   border-right: 0;
@@ -1718,39 +1726,28 @@ header .user img {
 
 /* line 3, ../../assets/sass/layout/_main.sass */
 main {
-  background-color: #f1f4f5;
+  background-color: #fff;
   grid-column: main-start/end;
   grid-row: main-start/end;
   overflow: auto;
 }
-/* line 12, ../../assets/sass/layout/_main.sass */
-main header {
-  display: flex;
-  padding-left: 2em;
-  margin-bottom: 1em;
-}
-/* line 16, ../../assets/sass/layout/_main.sass */
-main header .left {
-  align-self: flex-start;
-}
-/* line 18, ../../assets/sass/layout/_main.sass */
-main header .right {
-  align-self: flex-end;
-  text-align: right;
-}
-/* line 22, ../../assets/sass/layout/_main.sass */
+/* line 9, ../../assets/sass/layout/_main.sass */
 main .no-margin-bottom {
   margin-bottom: 0;
 }
-/* line 25, ../../assets/sass/layout/_main.sass */
+/* line 12, ../../assets/sass/layout/_main.sass */
 main section.block {
   background-color: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   margin: 2em;
 }
-/* line 29, ../../assets/sass/layout/_main.sass */
+/* line 17, ../../assets/sass/layout/_main.sass */
 main section.block article {
   padding: 1em;
+}
+/* line 20, ../../assets/sass/layout/_main.sass */
+main section.block article header {
+  padding-left: 1em;
 }
 
 /* line 4, ../../assets/sass/components/_alerts.sass */
@@ -2092,4 +2089,118 @@ main section.block article {
 /* line 64, ../../assets/sass/components/_buttons.sass */
 .button-close em {
   padding: 0.5em;
+}
+
+/* line 1, ../../assets/sass/components/_forms.sass */
+form {
+  line-height: 2em;
+}
+/* line 4, ../../assets/sass/components/_forms.sass */
+form fieldset input, form fieldset select {
+  width: 100%;
+  padding: 0.5em 1em;
+}
+/* line 8, ../../assets/sass/components/_forms.sass */
+form fieldset input[type="radio"], form fieldset input[type="checkbox"] {
+  width: inherit;
+}
+/* line 10, ../../assets/sass/components/_forms.sass */
+form fieldset textarea {
+  width: 100%;
+}
+/* line 13, ../../assets/sass/components/_forms.sass */
+form .textarea-container label {
+  vertical-align: top;
+}
+/* line 16, ../../assets/sass/components/_forms.sass */
+form .form-buttons {
+  margin-top: 2em;
+}
+/* line 18, ../../assets/sass/components/_forms.sass */
+form .form-buttons button:first-child {
+  margin-right: 1em;
+}
+/* line 21, ../../assets/sass/components/_forms.sass */
+form.titled-form {
+  margin-top: 1em;
+}
+/* line 80, ../../assets/sass/base/_mixins.sass */
+form.titled-form .title {
+  background-color: #272c2f;
+  color: #f1f4f5;
+  padding: 0.5em;
+}
+/* line 23, ../../assets/sass/components/_forms.sass */
+form.titled-form .subtitle {
+  background-color: transparent;
+  color: #272c2f;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* line 1, ../../assets/sass/components/_tables.sass */
+table {
+  margin-top: 1em;
+  padding: 1em;
+  width: 100%;
+}
+/* line 6, ../../assets/sass/components/_tables.sass */
+table em {
+  color: #cad04a;
+}
+/* line 8, ../../assets/sass/components/_tables.sass */
+table th, table td {
+  border-bottom: 1px solid #272c2f;
+  padding: 1em;
+  text-align: center;
+}
+/* line 12, ../../assets/sass/components/_tables.sass */
+table th {
+  text-transform: uppercase;
+}
+/* line 14, ../../assets/sass/components/_tables.sass */
+table .date {
+  font-size: 0.8em;
+}
+/* line 16, ../../assets/sass/components/_tables.sass */
+table .message-title {
+  max-width: 20em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  white-space: nowrap;
+  width: 50%;
+}
+
+/* line 23, ../../assets/sass/components/_tables.sass */
+.titled-table {
+  margin-top: 1em;
+}
+/* line 80, ../../assets/sass/base/_mixins.sass */
+.titled-table .title {
+  background-color: #272c2f;
+  color: #f1f4f5;
+  padding: 0.5em;
+}
+/* line 25, ../../assets/sass/components/_tables.sass */
+.titled-table table {
+  margin-top: 0;
+}
+/* line 27, ../../assets/sass/components/_tables.sass */
+.titled-table table th {
+  border-top: 1px solid #272c2f;
+}
+
+/* line 30, ../../assets/sass/components/_tables.sass */
+.bordered-table {
+  border: 1px solid #272c2f;
+}
+/* line 32, ../../assets/sass/components/_tables.sass */
+.bordered-table td {
+  border-right: 1px solid #272c2f;
+}
+
+/* line 36, ../../assets/sass/components/_tables.sass */
+.striped-table tr:nth-child(even) {
+  background-color: #f1f4f5;
 }

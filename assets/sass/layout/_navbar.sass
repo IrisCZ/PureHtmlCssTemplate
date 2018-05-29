@@ -71,11 +71,12 @@
         border-bottom: 2px solid transparent
         &:hover
           border-bottom: 2px solid $main-color
+        em
+          margin: 0
         .menu-title
           &:hover::after
             content: none
-          & > em
-            margin: 0
+
       .options
         display: flex
         flex-direction: column
@@ -97,6 +98,8 @@
           position: relative
           text-transform: uppercase
           visibility: visible
+        em
+          margin-right: .5em
 
     .toggle-button
       border-left: .5em solid $main-color

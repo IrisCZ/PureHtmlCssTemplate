@@ -1,0 +1,27 @@
+form
+  line-height: 2em
+  fieldset
+    input, select
+      width: 100%
+      padding: .5em 1em
+
+    input[type="radio"], input[type="checkbox"]
+      width: inherit
+    textarea
+      width: 100%
+  .textarea-container
+    label
+      vertical-align: top
+
+  .form-buttons
+    margin-top: 2em
+    button:first-child
+      margin-right: 1em
+
+  &.titled-form
+    @include titled-el()
+    .subtitle
+      background-color: transparent
+      color: $grey
+      text-align: left
+      text-transform: uppercase

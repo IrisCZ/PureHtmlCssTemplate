@@ -1,97 +1,109 @@
 header
   background-color: $ligth-grey
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15)
-  grid-column: aside-start / end
-  grid-row: start / main-start
   display: flex
   justify-content: space-between
   padding: .5em
   z-index: 1
-  h1, h2
-    margin-bottom: 0
+.container
+  .block
+    >header
+      margin-bottom: 1em
+      .left
+        align-self: flex-start
+      .right
+        align-self: flex-end
+        max-width: 75%
+        text-align: right
+  >header
+    grid-column: aside-start / end
+    grid-row: start / main-start
+    padding-left: 1.5em
+    h1, h2
+      margin-bottom: 0
 
-  .inline
-    align-items: center
-    display: flex
-    justify-content: flex-end
-    position: relative
-  .icon
-    align-items: center
-    background-color: $main-color
-    border-radius: 50%
-    color: $ligth-grey
-    cursor: pointer
-    display: flex
-    font-size: 1.2em
-    justify-content: center
-    margin-right: 1em
-    padding: .5em
-    position: relative
-    width: 2em
-    .badge
-      background-color: $ligth-grey
-      border: 2px solid $success-color
-      border-radius: 50%
-      color: $success-color
-      font-size: .8em
-      position: absolute
-      bottom: 1.6em
-      left: 1.6em
-      padding: .2em .4em
-      &.error
-        border: 2px solid $error-color
-        color: $error-color
-
-  .search
-    position: relative
-    direction: rtl
-  .search-icon
-    z-index: 1
-  .search-input
-    border-radius: 1.5em
-    border: 1px solid $main-color
-    height: 2.4rem
-    direction: ltr
-    margin-right: 1.2rem
-    padding: 0 3rem 0 1rem
-    position: absolute
-    top: 0
-    transition: width 1.5s ease-in-out
-    visibility: hidden
-    width: 3em
-    z-index: 0
-  #open-search:checked + .search-input
-    width: 30em
-    visibility: visible
-
-  .mail-options
-    max-height: 3em
-    overflow: hidden
-    position: absolute
-    transition: max-height 1.5s ease-in-out
-    visibility: hidden
-  #open-mail:checked + .mail-options
-    @include dropdown()
-
-  .notification-options
-    max-height: 3em
-    overflow: hidden
-    position: absolute
-    transition: max-height 1.5s ease-in-out
-    visibility: hidden
-    li
+    .inline
+      align-items: center
       display: flex
-  #open-notification:checked + .notification-options
-    @include dropdown()
+      justify-content: flex-end
+      position: relative
+    .icon
+      align-items: center
+      background-color: $main-color
+      border-radius: 50%
+      color: $ligth-grey
+      cursor: pointer
+      display: flex
+      font-size: 1.2em
+      justify-content: center
+      margin-right: 1em
+      padding: .5em
+      position: relative
+      width: 2em
+      .badge
+        background-color: $ligth-grey
+        border: 2px solid $success-color
+        border-radius: 50%
+        color: $success-color
+        font-size: .8em
+        position: absolute
+        bottom: 1.6em
+        left: 1.6em
+        padding: .2em .4em
+        &.error
+          border: 2px solid $error-color
+          color: $error-color
 
-  .user
-    border: 2px solid $accent-color
-    box-sizing: content-box
-    height: 100%
-    img
-      height: 4em
-      width: 4em
+    .search
+      position: relative
+      direction: rtl
+    .search-icon
+      z-index: 1
+    .search-input
+      border-radius: 1.5em
+      border: 1px solid $main-color
+      height: 2.4rem
+      direction: ltr
+      margin-right: 1.2rem
+      padding: 0 3rem 0 1rem
+      position: absolute
+      top: 0
+      transition: width 1.5s ease-in-out
+      visibility: hidden
+      width: 3em
+      z-index: 0
+    #open-search:checked + .search-input
+      width: 30em
+      visibility: visible
 
-.leaned
-  transform: rotate(-3deg) translate(14em)
-  color: $main-color
+    .mail-options
+      max-height: 3em
+      overflow: hidden
+      position: absolute
+      transition: max-height 1.5s ease-in-out
+      visibility: hidden
+    #open-mail:checked + .mail-options
+      @include dropdown()
+
+    .notification-options
+      max-height: 3em
+      overflow: hidden
+      position: absolute
+      transition: max-height 1.5s ease-in-out
+      visibility: hidden
+      li
+        display: flex
+    #open-notification:checked + .notification-options
+      @include dropdown()
+
+    .user
+      border: 2px solid $accent-color
+      box-sizing: content-box
+      height: 100%
+      img
+        height: 4em
+        width: 4em
+
+  .leaned
+    transform: rotate(-3deg) translate(14em)
+    color: $main-color

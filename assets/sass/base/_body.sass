@@ -2,7 +2,6 @@
 body
   overflow: hidden
 *
-  // transition: all 1s ease-in-out
   box-sizing: border-box
   scroll-behavior: smooth
 
@@ -24,6 +23,7 @@ body
 .card-content
   padding-top: 1em
 
-input:focus
+input:focus, select:focus, textarea:focus
   outline: none
-  box-shadow: 0 0 3px $success-color
+  border-radius: $accent-color
+  box-shadow: 0 0 3px $accent-color

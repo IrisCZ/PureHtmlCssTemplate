@@ -45,7 +45,7 @@
 									<p class="date">Just now</p>
 								</div>
 							</div>
-							<p class="message">This is a example of mail that just can have two phrases.</p>
+							<p class="message">This is a example of mail that as much can have two sentences.</p>
 						</li>
 						<li>
 							<div class="item-title">
@@ -55,17 +55,17 @@
 									<p class="date">10 minutes ago</p>
 								</div>
 							</div>
-							<p class="message">This is a example of mail that just can have two phrases.</p>
+							<p class="message">This is a example of mail that as much can have two sentences.</p>
 						</li>
 						<li>
 							<div class="item-title">
 								<img class="title-img" src="public/imgs/girl1.png" alt="Profile's photo">
 								<div>
-									<span class="title-description">Wang Shu</span>
+									<span class="title-description">Pànghūhū de guǐhún</span>
 									<p class="date">17/05/2018</p>
 								</div>
 							</div>
-							<p class="message">This is a example of mail that just can have two phrases.</p>
+							<p class="message">This is a example of mail that as much can have two sentences.</p>
 						</li>
 					</ul>
 				</div>
@@ -114,7 +114,7 @@
 
 					<li class="menu-item">
 						<label class="menu-title" for="open-components">
-							<em  class="fa fa-laptop" aria-label="Components"></em>
+							<em  class="fa fa-laptop" title="Components" aria-label="Components"></em>
 							<span class="menu-label">Components</span>
 						</label>
 						<input class= "hidden" type="checkbox" name="navbar-options" id="open-components">
@@ -124,25 +124,25 @@
 							</li>
 							<li>
 								<a href="#alerts">
-									<em  class="fas fa-exclamation-triangle" aria-label="Alerts"></em>
+									<em  class="fas fa-exclamation-triangle" title="Alerts" aria-label="Alerts"></em>
 									<span class="submenu-label">Alerts</span>
 								</a>
 							</li>
 							<li>
 								<a href="#blocks">
-									<em  class="fas fa-square" aria-label="Blocks"></em>
+									<em  class="fas fa-square" aria-label="Blocks" title="Blocks"></em>
 									<span class="submenu-label">Blocks</span>
 								</a>
 							</li>
 							<li>
 								<a href="#buttons">
-									<em  class="far fa-hand-point-up" aria-label="Buttons"></em>
+									<em  class="far fa-hand-point-up" aria-label="Buttons" title="Buttons"></em>
 									<span class="submenu-label">Buttons</span>
 								</a>
 							</li>
 							<li>
 								<a href="#grid">
-									<em  class="fas fa-th" aria-label="Grid"></em>
+									<em  class="fas fa-th" aria-label="Grid" title="Grid"></em>
 									<span class="submenu-label">Grid</span>
 								</a>
 							</li>
@@ -151,7 +151,7 @@
 
 						<li class="menu-item">
 							<label class="menu-title" for="open-tables">
-								<em  class="fa fa-table" aria-label="Tables"></em>
+								<em  class="fa fa-table" aria-label="Tables" title="Tables"></em>
 								<span class="menu-label">Tables</span>
 							</label>
 							<input class= "hidden" type="checkbox" name="navbar-options" id="open-tables">
@@ -176,7 +176,7 @@
 
 						<li class="menu-item">
 							<a href="#forms">
-								<em  class="fab fa-wpforms" aria-label="Forms"></em>
+								<em  class="fab fa-wpforms" aria-label="Forms" title="Forms"></em>
 								<span class="menu-label">Forms</span>
 							</a>
 						</li>
@@ -185,13 +185,13 @@
 						<ul>
 							<li class="menu-item">
 								<a href="#login">
-									<em  class="fas fa-sign-in-alt" aria-label="Login"></em>
+									<em  class="fas fa-sign-in-alt" aria-label="Login" title="Login"></em>
 									<span class="menu-label">LogIn</span>
 								</a>
 							</li>
 							<li class="menu-item">
 								<a href="#forgetpas">
-									<em  class="fas fa-key" aria-label="Forget Password"></em>
+									<em  class="fas fa-key" aria-label="Forget Password" title="Forget Password"></em>
 									<span class="menu-label">Forget Password</span>
 								</a>
 							</li>
@@ -199,11 +199,13 @@
 					</ul>
 				</nav>
 			</aside>
+
 			<main class="content">
+
 				<section  class="block">
 					<a id="alerts"></a>
 					<header>
-						<h3 class="no-margin-bottom">Alerts</h3>
+						<h3 class="title no-margin-bottom">Alerts</h3>
 					</header>
 					<article>
 						<div class="alert generic-alert">
@@ -270,7 +272,7 @@
 				<section class="block">
 					<a id="blocks"></a>
 					<header>
-						<h3 class="no-margin-bottom">Blocks</h3>
+						<h3 class="title no-margin-bottom">Blocks</h3>
 					</header>
 					<article>
 						<h1>This is a HERO example with a large TITLE.</h1>
@@ -282,10 +284,10 @@
 				<section class="block">
 					<a id="buttons"></a>
 					<header>
-						<h3 class="no-margin-bottom">Buttons</h3>
+						<h3 class="title no-margin-bottom">Buttons</h3>
 					</header>
-					<article class="col2">
-						<div class="card">
+					<article class="grid-container">
+						<div class="card col-xs-12 col-md-6">
 							<header>
 								<strong>Default Buttons</strong>
 								<div class="right">
@@ -303,7 +305,7 @@
 								<button type="button" name="button" class="btn btn-error">Error</button>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card col-xs-12 col-md-6">
 							<header>
 								<strong>Outlined Buttons</strong>
 								<div class="right">
@@ -320,7 +322,7 @@
 								<button type="button" name="button" class="btn-error outlined">Error</button>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card col-xs-12 col-md-6">
 							<header>
 								<strong>Gradient Buttons</strong>
 								<div class="right">
@@ -337,7 +339,7 @@
 								<button type="button" name="button" class="btn btn-grad-error gradient">Error</button>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card col-xs-12 col-md-6">
 							<header>
 								<strong>Clear Buttons</strong>
 								<div class="right">
@@ -359,13 +361,15 @@
 				<section class="block">
 					<a id="grid"></a>
 					<header>
-						<h3 class="no-margin-bottom">Grid</h3>
+						<h3 class="title no-margin-bottom">Grid</h3>
 					</header>
 					<article>
 						<header>
-							<strong>Grid with offset</strong>
+							<strong>12 columns grid with offset</strong>
 							<div class="right">
-								<small>Use offset to position cells ins a grid. Use allways a  <code>&lt;div class="grid-container"&gt;</code> <br>
+								<small>
+									Use always a  <code>&lt;div class="grid-container"&gt;</code>
+									Every cell must have width and height. Use offset to position cells in a grid.<br>
 									<strong>e.g.</strong> <code>&lt;div&gt; class="col-xs-1 col-xs-offset-12" </code>
 								</small>
 							</div>
@@ -387,17 +391,18 @@
 					</article>
 					<article>
 						<header>
-							<strong>Grid with cells of multiple sizes</strong>
+							<strong>12 columns grid with cells of multiple sizes</strong>
 							<div class="right">
-								<small>Use xs, sm, md or lg to adapt the grid to diferent sizes of screens<br>
-										<strong>e.g.</strong> <code>&lt;div&gt; class="col-xs-12 col-md-4" </code>
+								<small>
+									Use xs, sm, md or lg to adapt the grid to diferent sizes of screens<br>
+									<strong>e.g.</strong> <code>&lt;div class="col-xs-12 col-md-6"&gt;</code> Means that your cell will have full with in a very small screen and half with in a mediun screen.
 								</small>
 							</div>
 						</header>
 						<div class="grid-container grid-eg">
 							<div class="col-xs-12 col-md-4"></div>
 							<div class="col-xs-8 col-md-2"></div>
-							<div class="col-xs-8 col-md-2"></div>
+							<div class="col-xs-8 col-md-6"></div>
 							<div class="col-xs-4 col-md-1"></div>
 							<div class="col-xs-4 col-md-1"></div>
 							<div class="col-xs-4 col-md-1"></div>
@@ -418,12 +423,325 @@
 							<div class="col-xs-4 col-md-1"></div>
 							<div class="col-xs-8 col-md-2"></div>
 							<div class="col-xs-8 col-md-2"></div>
-							<div class="col-xs-4 col-md-1"></div>
-							<div class="col-xs-4 col-md-1"></div>
-							<div class="col-xs-12 col-md-2"></div>
 						</div>
 					</article>
 				</section>
+				<section class="block">
+					<a id="basic-table"></a>
+					<header>
+						<h3 class="title no-margin-bottom">Basic table</h3>
+						<div class="right">
+							<small>
+								Use always a  <code>&lt;class="grid-container"&gt;</code>
+								Every cell must have width and height. Use offset to position cells in a grid.<br>
+								<strong>e.g.</strong> <code>&lt;div class="col-xs-12 col-md-6"&gt;	</code>
+							</small>
+						</div>
+					</header>
+					<div class=" grid-container">
+						<article class="card col-xs-12 col-md-6">
+							<header>
+								<strong>Basic table</strong>
+							</header>
+							<table>
+	            	<thead>
+	              	<tr>
+	                	<th scope="col"></th>
+	                	<th scope="col">Name</th>
+	                	<th scope="col">Date</th>
+	                	<th scope="col">Title</th>
+		            	</tr>
+			          </thead>
+								<tbody>
+									<tr>
+										<th scope="row">
+										</th>
+										<td>María López</td>
+										<td class="date">Just now</td>
+										<td class="message-title">This is a example of mail that as much can have one sentence.</td>
+									</tr>
+									<tr>
+										<th scope="row">
+										</th>
+										<td>Jane Smith</td>
+										<td class="date">10 minutes ago</td>
+										<td class="message-title">This is a example of mail that as much can have one sentence.</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<em class="fas fa-star"></em>
+										</th>
+										<td>Pànghūhū de guǐhún</td>
+										<td class="date">17/05/2018</td>
+										<td class="message-title">This is a example of mail that as much can have one sentence.</td>
+									</tr>
+								</tbody>
+	        		</table>
+						</article>
+						<article class="card col-xs-12 col-md-6">
+							<header>
+								<strong>Basic table with title</strong>
+							</header>
+							<div class="titled-table">
+								<div class="title">
+									messages
+								</div>
+								<table>
+		            	<thead>
+		              	<tr>
+		                	<th scope="col"></th>
+		                	<th scope="col">Name</th>
+		                	<th scope="col">Date</th>
+		                	<th scope="col">Title</th>
+			            	</tr>
+				          </thead>
+									<tbody>
+										<tr>
+											<th scope="row">
+											</th>
+											<td>María López</td>
+											<td class="date">Just now</td>
+											<td class="message-title">This is a example of mail that as much can have one sentence.</td>
+										</tr>
+										<tr>
+											<th scope="row">
+											</th>
+											<td>Jane Smith</td>
+											<td class="date">10 minutes ago</td>
+											<td class="message-title">This is a example of mail that as much can have one sentence.</td>
+										</tr>
+										<tr>
+											<th scope="row">
+												<em class="fas fa-star"></em>
+											</th>
+											<td>Pànghūhū de guǐhún</td>
+											<td class="date">17/05/2018</td>
+											<td class="message-title">This is a example of mail that as much can have one sentence.</td>
+										</tr>
+									</tbody>
+		        		</table>
+							</div>
+						</article>
+						<article class="card col-xs-12 col-md-6">
+							<header>
+								<strong>Bordered table</strong>
+							</header>
+							<table class="bordered-table">
+	            	<thead>
+	              	<tr>
+	                	<th scope="col"></th>
+	                	<th scope="col">Name</th>
+	                	<th scope="col">Date</th>
+	                	<th scope="col">Title</th>
+		            	</tr>
+			          </thead>
+								<tbody>
+									<tr>
+										<th scope="row">
+										</th>
+										<td>María López</td>
+										<td class="date">Just now</td>
+										<td class="message-title">This is a example of mail that as much can have one sentence.</td>
+									</tr>
+									<tr>
+										<th scope="row">
+										</th>
+										<td>Jane Smith</td>
+										<td class="date">10 minutes ago</td>
+										<td class="message-title">This is a example of mail that as much can have one sentence.</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<em class="fas fa-star"></em>
+										</th>
+										<td>Pànghūhū de guǐhún</td>
+										<td class="date">17/05/2018</td>
+										<td class="message-title">This is a example of mail that as much can have one sentence.</td>
+									</tr>
+								</tbody>
+	        		</table>
+						</article>
+						<article class="card col-xs-12 col-md-6">
+							<header>
+								<strong>Striped table</strong>
+							</header>
+							<table class="striped-table">
+	            	<thead>
+	              	<tr>
+	                	<th scope="col"></th>
+	                	<th scope="col">Name</th>
+	                	<th scope="col">Date</th>
+	                	<th scope="col">Title</th>
+		            	</tr>
+			          </thead>
+								<tbody>
+									<tr>
+										<th scope="row">
+										</th>
+										<td>María López</td>
+										<td class="date">Just now</td>
+										<td class="message-title">This is a example of mail that as much can have one sentence.</td>
+									</tr>
+									<tr>
+										<th scope="row">
+										</th>
+										<td>Jane Smith</td>
+										<td class="date">10 minutes ago</td>
+										<td class="message-title">This is a example of mail that as much can have one sentence.</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<em class="fas fa-star"></em>
+										</th>
+										<td>Pànghūhū de guǐhún</td>
+										<td class="date">17/05/2018</td>
+										<td class="message-title">This is a example of mail that as much can have one sentence.</td>
+									</tr>
+								</tbody>
+	        		</table>
+						</article>
+					</div>
+
+				</section>
+				<section class="block">
+					<a id="forms"></a>
+					<header>
+						<h3 class="title no-margin-bottom">Basic form</h3>
+						<div class="right">
+							<small>
+								Use always a wrapper element <code>&lt;class="grid-container"&gt;</code><br>
+								<strong>e.g.</strong> <code>&lt;div class="col-xs-12 col-md-6"&gt;	</code>
+							</small>
+						</div>
+					</header>
+					<div class="grid-container">
+
+						<article class="card col-xs-12">
+							<header>
+								<strong>Basic form Grid</strong>
+							</header>
+							<form  class="titled-form grid-container">
+								<div class="title col-xs-12">
+									contact form
+								</div>
+								<fieldset class="col-xs-12">
+									<legend class="subtitle">
+										inline two elements
+									</legend>
+									<div class="grid-container">
+										<div class="col-xs-12  col-md-6">
+											<label for="exampleInputEmail1">Email address</label>
+											<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+											<small class="text-muted">We'll never share your email with anyone else.</small>
+										</div>
+										<div class="col-xs-12  col-md-6">
+											<label for="exampleInputPassword1">Password</label>
+											<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="col-xs-12">
+									<legend class="subtitle">
+										inline three elements
+									</legend>
+									<div class="grid-container">
+										<div class="col-xs-12  col-md-4">
+											<label for="exampleSelect1">Example select</label>
+											<select class="form-control" id="exampleSelect1">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+										<div class="col-xs-12  col-md-4">
+											<label for="exampleSelect2">Example multiple select</label>
+											<select multiple size="1" class="form-control" id="exampleSelect2">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+											<small>Hold down the ctrl or cmd key to select more than one option in the list
+											</small>
+										</div>
+										<div class="col-xs-12  col-md-4">
+											<label for="exampleSelect1">Example multiple select open</label>
+											<select  multiple size="5" class="form-control" id="exampleSelect1">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+											<small>Hold down the ctrl or cmd key to select more than one option in the list
+											</small>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="textarea-container col-xs-12">
+									<label for="exampleTextarea">Example textarea</label>
+									<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+								</fieldset>
+								<fieldset class="col-xs-12">
+									<label for="exampleInputFile">File input</label>
+									<input type="file" class="form-control-file" id="exampleInputFile">
+									<small class="text-muted">This is some placeholder block-level help text for the above input.
+										It's a bit lighter and easily wraps to a new line.</small>
+								</fieldset>
+								<fieldset class="col-xs-12">
+									<legend class="subtitle">
+										Example radio buttons
+									</legend>
+									<div class="grid-container">
+										<div class="radio col-xs-12  col-md-4">
+											<label>
+												<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+												Option one is this and that&mdash;be sure to include why it's great
+											</label>
+										</div>
+										<div class="radio col-xs-12  col-md-4">
+											<label>
+												<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+												Option two can be something else and selecting it will deselect option one
+											</label>
+										</div>
+										<div class="radio disabled col-xs-12  col-md-4">
+											<label>
+												<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+												Option three is disabled
+											</label>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="col-xs-12">
+									<legend class="subtitle">
+										Example checkboxes
+									</legend>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"> Check me out
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"> Check me out
+										</label>
+									</div>
+								</fieldset>
+								<fieldset class="col-xs-12">
+									<div class="form-buttons">
+										<button type="reset" class="btn outlined">Reset</button>
+										<button type="submit" class="btn btn-primary">Submit</button>
+									</div>
+								</fieldset>
+							</form>
+						</article>
+					</div>
+				</section>
+
 			</main>
 			<footer>
 

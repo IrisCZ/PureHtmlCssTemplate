@@ -1,23 +1,10 @@
 @import base/variables
 
 main
-  background-color: $ligth-grey
+  background-color: $white
   grid-column: main-start / end
   grid-row: main-start / end
   overflow: auto
-  // display: grid
-  // grid-gap: 10px
-  // grid-template-columns: repeat(auto-fit, minmax(30em, 1fr))
-
-  header
-    display: flex
-    padding-left: 2em
-    margin-bottom: 1em
-    .left
-      align-self: flex-start
-    .right
-      align-self: flex-end
-      text-align: right
 
   .no-margin-bottom
     margin-bottom: 0
@@ -26,5 +13,9 @@ main
     background-color: $white
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15)
     margin: 2em
+
     article
       padding: 1em
+
+      header
+        padding-left: 1em
