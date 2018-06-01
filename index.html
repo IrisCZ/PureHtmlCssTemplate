@@ -14,7 +14,7 @@
 	<div class="container">
 
 		<header class="header">
-			<div>
+			<div class="title-container">
 				<h1 class="title no-margin-bottom">Pure Html and Css template</h1>
 				<h2 class="accent-text leaned">And a little of Javascript!</h2>
 			</div>
@@ -148,8 +148,13 @@
 							</li>
 						</ul>
 						</li>
-
 						<li class="menu-item">
+							<a href="#basic-table">
+								<em  class="fa fa-table" aria-label="Tables" title="Tables"></em>
+								<span class="menu-label">Tables</span>
+							</a>
+						</li>
+						<!-- <li class="menu-item">
 							<label class="menu-title" for="open-tables">
 								<em  class="fa fa-table" aria-label="Tables" title="Tables"></em>
 								<span class="menu-label">Tables</span>
@@ -172,7 +177,7 @@
 									</a>
 								</li>
 							</ul>
-						</li>
+						</li> -->
 
 						<li class="menu-item">
 							<a href="#forms">
@@ -181,7 +186,7 @@
 							</a>
 						</li>
 
-						<h3 class="title">Pages</h3>
+						<!-- <h3 class="title">Pages</h3>
 						<ul>
 							<li class="menu-item">
 								<a href="#login">
@@ -194,13 +199,42 @@
 									<em  class="fas fa-key" aria-label="Forget Password" title="Forget Password"></em>
 									<span class="menu-label">Forget Password</span>
 								</a>
-							</li>
+							</li> -->
 						</ul>
 					</ul>
 				</nav>
 			</aside>
 
 			<main class="content">
+
+				<section class="block">
+					<a id="blocks"></a>
+					<header>
+						<h3 class="title no-margin-bottom">Blocks</h3>
+					</header>
+					<article>
+						<div class="hero-line">
+							<code>&lt;h1&gt;</code>
+							<h1> I want this to be a really SIMPLE template.</h1>
+						</div>
+						<div class="hero-line">
+							<code>&lt;h2&gt;</code>
+							<h2>Just pure Html, Css and a little of Javascript.</h2>
+						</div>
+						<div class="hero-line">
+							<code>&lt;h3&gt;</code>
+							<h3>No bootstrap, no J-Query.</h3>
+						</div>
+						<div class="hero-line">
+							<code>&lt;p&gt;</code>
+							<p>As this is made to be easy for you, whatever recomendation you have, contact me or</p>
+						</div>
+						<div class="hero-line">
+							<code>&lt;span class="accent-text"&gt;</code>
+							<span class="accent-text">"pull request me"!</span>
+						</div>
+					</article>
+				</section>
 
 				<section  class="block">
 					<a id="alerts"></a>
@@ -269,18 +303,7 @@
 						</div>
 					</article>
 				</section>
-				<section class="block">
-					<a id="blocks"></a>
-					<header>
-						<h3 class="title no-margin-bottom">Blocks</h3>
-					</header>
-					<article>
-						<h1>This is a HERO example with a large TITLE.</h1>
-						<h2>And also a hero SUBHEADING example.</h2>
-						<h3>And a SUBHEADING of a subheading.</h3>
-						<p>Besides some nonsense text just to try how the lines fit in a quite small paragraph with a couple of lines in large screens.</p>
-					</article>
-				</section>
+
 				<section class="block">
 					<a id="buttons"></a>
 					<header>
@@ -434,12 +457,12 @@
 							<small>
 								Use always a  <code>&lt;class="grid-container"&gt;</code>
 								Every cell must have width and height. Use offset to position cells in a grid.<br>
-								<strong>e.g.</strong> <code>&lt;div class="col-xs-12 col-md-6"&gt;	</code>
+								<strong>e.g.</strong> <code>&lt;div class="col-xs-12 col-lg-6"&gt;	</code>
 							</small>
 						</div>
 					</header>
 					<div class=" grid-container">
-						<article class="card col-xs-12 col-md-6">
+						<article class="card col-xs-12 col-lg-6">
 							<header>
 								<strong>Basic table</strong>
 							</header>
@@ -478,7 +501,7 @@
 								</tbody>
 	        		</table>
 						</article>
-						<article class="card col-xs-12 col-md-6">
+						<article class="card col-xs-12 col-lg-6">
 							<header>
 								<strong>Basic table with title</strong>
 							</header>
@@ -522,7 +545,7 @@
 		        		</table>
 							</div>
 						</article>
-						<article class="card col-xs-12 col-md-6">
+						<article class="card col-xs-12 col-lg-6">
 							<header>
 								<strong>Bordered table</strong>
 							</header>
@@ -561,7 +584,7 @@
 								</tbody>
 	        		</table>
 						</article>
-						<article class="card col-xs-12 col-md-6">
+						<article class="card col-xs-12 col-lg-6">
 							<header>
 								<strong>Striped table</strong>
 							</header>
@@ -629,14 +652,22 @@
 										inline two elements
 									</legend>
 									<div class="grid-container">
-										<div class="col-xs-12  col-md-6">
+										<div class="mandatory col-xs-12  col-md-6">
 											<label for="exampleInputEmail1">Email address</label>
-											<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+											<input type="email" id="exampleInputEmail1" placeholder="Enter email" aria-required="true">
 											<small class="text-muted">We'll never share your email with anyone else.</small>
 										</div>
-										<div class="col-xs-12  col-md-6">
+										<div class="mandatory col-xs-12 col-md-6">
 											<label for="exampleInputPassword1">Password</label>
-											<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+											<input type="password" id="exampleInputPassword1" placeholder="Password" aria-required="true">
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="col-xs-12">
+									<div class="grid-container">
+										<div class="mandatory col-xs-3 col-xs-offset-1">
+											<label for="exampleInputDae">Date</label>
+											<input type="date" name="" value="" id="exampleInputDate">
 										</div>
 									</div>
 								</fieldset>
@@ -645,9 +676,9 @@
 										inline three elements
 									</legend>
 									<div class="grid-container">
-										<div class="col-xs-12  col-md-4">
+										<div class="mandatory col-xs-12  col-md-4">
 											<label for="exampleSelect1">Example select</label>
-											<select class="form-control" id="exampleSelect1">
+											<select id="exampleSelect1" aria-required="true">
 												<option>1</option>
 												<option>2</option>
 												<option>3</option>
@@ -657,7 +688,7 @@
 										</div>
 										<div class="col-xs-12  col-md-4">
 											<label for="exampleSelect2">Example multiple select</label>
-											<select multiple size="1" class="form-control" id="exampleSelect2">
+											<select multiple size="1" id="exampleSelect2">
 												<option>1</option>
 												<option>2</option>
 												<option>3</option>
@@ -669,7 +700,7 @@
 										</div>
 										<div class="col-xs-12  col-md-4">
 											<label for="exampleSelect1">Example multiple select open</label>
-											<select  multiple size="5" class="form-control" id="exampleSelect1">
+											<select  multiple size="5" id="exampleSelect1">
 												<option>1</option>
 												<option>2</option>
 												<option>3</option>
@@ -683,11 +714,11 @@
 								</fieldset>
 								<fieldset class="textarea-container col-xs-12">
 									<label for="exampleTextarea">Example textarea</label>
-									<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+									<textarea  id="exampleTextarea" rows="3"></textarea>
 								</fieldset>
 								<fieldset class="col-xs-12">
 									<label for="exampleInputFile">File input</label>
-									<input type="file" class="form-control-file" id="exampleInputFile">
+									<input type="file" class="-file" id="exampleInputFile">
 									<small class="text-muted">This is some placeholder block-level help text for the above input.
 										It's a bit lighter and easily wraps to a new line.</small>
 								</fieldset>

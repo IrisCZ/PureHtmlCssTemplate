@@ -20,12 +20,16 @@ let Dropdown = function(name){
   let addBehaviour = function(){
     elements.forEach(element => {
       element.addEventListener('click', () => {
-        elements.forEach( check => {
-          if (element != check){
-            check.checked = false
-          }
-        })
+        closeUnchecked(element)
       });
+    });
+  }
+
+  let closeUnchecked = function(element){
+    elements.forEach( check => {
+      if (element != check){
+        check.checked = false
+      }
     });
   }
 
@@ -56,7 +60,7 @@ document.addEventListener('click', (e) => {
   }
 
   let checkboxId = label.getAttribute('for')
-  if(dropdownNames.indexOf(document.getElementById(checkboxId).name) >= 0){
+  if(document.getElementById(checkboxId) && dropdownNames.indexOf(document.getElementById(checkboxId).name) >= 0){
     return
   }
 
