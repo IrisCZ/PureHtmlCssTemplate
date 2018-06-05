@@ -1,8 +1,12 @@
 .hero-line
-  line-height: 2em
+  line-height: 2
   position: relative
   text-align: center
-
+  z-index: 0
+  @media only screen and (max-width:$sm)
+    position: inherit
   code
     position: absolute
     left: 0
+    @media only screen and (max-width:$lg)
+      position: static

@@ -4,11 +4,14 @@
   background-color: $grey
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)
   color: $ligth-grey
-  grid-column: aside-start / main-start
-  grid-row: main-start / end
-  line-height: 3em
+  grid-column: nav-start / nav-end
+  grid-row: nav-start / nav-end
+  line-height: 3
   padding-top: 1em
   z-index: 1
+  @media only screen and (max-width:$sm)
+    padding-top: inherit
+
   a
     display: block
   em
@@ -16,39 +19,59 @@
     background-color: transparent
     color: $ligth-grey
     margin-right: .5em
-  .menu-item
-    cursor: pointer
-    border-bottom: 2px solid transparent
-    padding: 0 1em
-    em
-      cursor: pointer
-    .menu-title
-      cursor: pointer
-      display: block
-      &:hover::after
-        content: "\f107"
-        font-family: 'Font Awesome\ 5 Free'
-        font-weight: 900
-        font-style: normal
-        margin: 0px 10px 0px 10px
-        text-decoration: none
-        float: right
-    .options
-      display: none
-      margin-left: 1em
+  .nav-items
+    @media only screen and (max-width:$sm)
+      display: flex
+      justify-content: space-between
+    .title
+      @media only screen and (max-width:$sm)
+        display: none
 
-  input:checked + ul.options
-    display: block
+    .nav-item
+      cursor: pointer
+      border-bottom: 2px solid transparent
+      padding: 0 1em
+      @media only screen and (max-width:$sm)
+        padding: 0
+      em
+        cursor: pointer
+      .menu-title
+        cursor: pointer
+        display: block
+        @media only screen and (max-width:$sm)
+          padding: 0 1em
+        .menu-label
+          @media only screen and (max-width:$sm)
+            display: inline-block
+            font-size: .8em
+        &:hover::after
+          content: "\f107"
+          font-family: 'Font Awesome\ 5 Free'
+          font-weight: 900
+          font-style: normal
+          margin: 0px 10px 0px 10px
+          text-decoration: none
+          float: right
+          @media only screen and (max-width:$sm)
+            content: none
+      .options
+        display: none
+        margin-left: 1em
+        @media only screen and (max-width:$sm)
+          margin-left: 0
+
   .toggle-aside
     position: relative
     display: block
+    @media only screen and (max-width:$sm)
+      display: none
     .toggle-button
       border-top: .5em solid transparent
       border-bottom: .5em solid transparent
       border-right: .5em solid $main-color
       cursor: pointer
       font-size: 3em
-      left: 4.75em
+      left: 4.7em
       position: absolute
       text-align: center
       top: -.25em
@@ -56,19 +79,26 @@
       height: 0
       width: 0
 
+#open-components:checked + ul.options
+  background-color: $grey
+  display: block
+  @media only screen and (max-width:$sm)
+    padding: 1em
+    z-index: 1
+
 #open-aside:checked + .container
-  grid-template-columns: unquote("[aside-start] 3.1em [main-start] 1fr [end]")
+  grid-template-columns: unquote("[header-start nav-start] 3.1em [nav-end main-start] 1fr [header-end main-end]")
   overflow: hidden
   .menu-label
     display: none
   .navbar
     ul.nav-items
-      padding-top: 3.6em
+      padding-top: 4.2em
       .title
         display: none
-      .menu-item
-        display: inline-block
+      .nav-item
         border-bottom: 2px solid transparent
+        display: inline-block
         &:hover
           border-bottom: 2px solid $main-color
         em
@@ -90,16 +120,8 @@
         transition: margin-left .5s ease-in-out
         border-top: 2px solid $main-color
         @include dropright()
-
-        .title-dropright
-          cursor: default
-          display: block
-          font-weight: 900
-          position: relative
-          text-transform: uppercase
-          visibility: visible
-        em
-          margin-right: .5em
+        // @media only screen and (max-width:$sm)
+        //   @include dropdown()
 
     .toggle-button
       border-left: .5em solid $main-color

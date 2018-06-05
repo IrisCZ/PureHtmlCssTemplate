@@ -1,6 +1,7 @@
 @import base/variables
 body
   overflow: hidden
+
 *
   box-sizing: border-box
   scroll-behavior: smooth
@@ -11,10 +12,13 @@ body
   font-family: 'Muli', sans-serif
   font-weight: 400
   display: grid
-  grid-template-columns: unquote("[aside-start] 16em [main-start] 1fr [end]")
-  grid-template-rows: unquote("[start] 5em [main-start] 1fr [end]")
+  grid-template-columns: unquote("[header-start nav-start] 16em [nav-end main-start] 1fr [header-end main-end]")
+  grid-template-rows: unquote("[header-start] 5em [header-end nav-start main-start] 1fr [nav-end main-end]")
   width: 100vw
   transition: 2s
+  @media only screen and (max-width:$sm)
+    grid-template-columns: unquote("[header-start nav-start main-start] 1fr [header-end nav-end main-end]")
+    grid-template-rows: unquote("[header-start] 8.5em [header-end nav-start] 3em [nav-end main-start] 1fr [main-end]")
 
 .hidden
   visibility: hidden
@@ -26,7 +30,9 @@ body
 .inline
   display: flex
   justify-content: space-evenly
-
+  flex-wrap: wrap
+  @media only screen and (max-width:$sm)
+    flex-direction: column
 
 input:focus, select:focus, textarea:focus
   outline: none

@@ -19,6 +19,9 @@
   visibility: visible
   width: auto
   z-index: 0
+  @media only screen and (max-width:$sm)
+    margin-top: 8rem
+
   li
     border-bottom: 1px solid $main-color
     padding: 1em
@@ -42,7 +45,7 @@
       display: -webkit-box
       -webkit-box-orient: vertical
       -webkit-line-clamp: 2
-      line-height: 1rem
+      line-height: 1
       max-height: 2rem
       margin-bottom: 0
 
@@ -55,6 +58,15 @@
   visibility: visible
   width: 10em
   z-index: 0
+  .title-dropright
+    cursor: default
+    display: block
+    font-weight: 900
+    position: relative
+    text-transform: uppercase
+    visibility: visible
+  em
+    margin-right: .5em
 
 @mixin button-default($args...)
   color: ($ligth-grey)
@@ -63,6 +75,7 @@
   border: 1.5px solid ($args)
   border-radius: 3em
   cursor: pointer
+  margin: .5em
   padding: 1em 2em
   text-transform: uppercase
   transition: 1.5s

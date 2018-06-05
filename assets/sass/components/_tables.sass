@@ -9,6 +9,12 @@ table
     border-bottom: 1px solid $grey
     padding: 1em
     text-align: center
+    @media only screen and (max-width:$sm)
+      max-width: 4em
+      padding: 1em .2em
+      &:first-child
+        @media only screen and (max-width:$sm)
+          display: none
   th
     text-transform: uppercase
   .date
@@ -20,6 +26,10 @@ table
     text-align: justify
     white-space: nowrap
     width: 50%
+    @media only screen and (max-width:$sm)
+      max-width: 4em
+      width: 30%
+
 .titled-table
   @include titled-el()
   table
