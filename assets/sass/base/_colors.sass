@@ -3,18 +3,22 @@
 
 .bg-success
   background-color: $success-color !important
+  border-color: $success-color
   color: $white
 
 .bg-info
   background-color: $info-color !important
+  border-color: $info-color
   color: $white
 
 .bg-warning
   background-color: $warning-color !important
+  border-color: $warning-color
   color: $white
 
 .bg-error
   background-color: $error-color !important
+  border-color: $error-color
   color: $white
 
 .bg-grad
@@ -31,3 +35,12 @@
 
 .bg-grad-error
   @include linear-gradient-a(to bottom, $error-color, rgba($error-color, .4))
+
+.info
+  color: $info-color
+.success
+  color: $success-color
+.warning
+  color: $warning-color
+.error
+  color: $error-color

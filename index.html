@@ -104,6 +104,8 @@
 			</div>
 		</header>
 
+		<!-- NAVBAR -->
+
 		<aside class="navbar">
 			<nav>
 				<label class="toggle-aside" for="open-aside" aria-label="Close navigation">
@@ -116,7 +118,7 @@
 					<li class="nav-item">
 						<label class="menu-title" for="open-components">
 							<em  class="fa fa-laptop" title="Components" aria-label="Components"></em>
-							<span class="menu-label">Components</span>
+							<span class="menu-label  icon-down">Components</span>
 						</label>
 						<input class= "hidden" type="checkbox" name="navbar-options" id="open-components">
 						<ul class="options">
@@ -145,6 +147,12 @@
 								<a href="#grid">
 									<em  class="fas fa-th" aria-label="Grid" title="Grid"></em>
 									<span class="submenu-label">Grid</span>
+								</a>
+							</li>
+							<li>
+								<a href="#switches">
+									<em  class="fas fa-toggle-on" aria-label="Grid" title="Grid"></em>
+									<span class="submenu-label">Switches</span>
 								</a>
 							</li>
 						</ul>
@@ -210,6 +218,8 @@
 			</aside>
 
 			<main class="content">
+
+				<!-- COMPONENTS -->
 
 				<section class="block">
 					<a id="blocks"></a>
@@ -454,6 +464,40 @@
 					</article>
 				</section>
 				<section class="block">
+					<a id="switches"></a>
+					<header>
+						<h3 class="title no-margin-bottom">Switches</h3>
+						<!-- <div class="right">
+							<small>
+								Use always a wrapper element <code>&lt;class="grid-container"&gt;</code><br>
+								<strong>e.g.</strong> <code>&lt;div class="col-xs-12 col-md-6"&gt;	</code>
+							</small>
+						</div> -->
+					</header>
+					<div class="grid-container">
+						<article class="card col-xs-12 col-md-6">
+							<header>
+								<strong>Default Switches</strong>
+								<div class="right">
+									<small>Use <code>&lt;label&gt;</code> and add class <code> switch </code>
+										and <code> bg-info, bg-success, bg-warning or bg-error.</code><br>
+										<strong>e.g.</strong> <code>&lt;label&gt; class="switch bg-info" </code>
+									</small>
+								</div>
+							</header>
+							<div class="inline card-content">
+								<input id="switch" type="checkbox" class="hidden switch" checked="true">
+								<label class="switch-label bg-info" for="switch">
+									<span class="switch-shadow"></span>
+									<span class="switch-handle"></span>
+								</label>
+							</div>
+						</article>
+					</div>
+				</section>
+
+				<!-- TABLES -->
+				<section class="block">
 					<a id="basic-table"></a>
 					<header>
 						<h3 class="title no-margin-bottom">Basic table</h3>
@@ -628,8 +672,10 @@
 	        		</table>
 						</article>
 					</div>
-
 				</section>
+
+				<!-- FORMS				 -->
+
 				<section class="block">
 					<a id="forms"></a>
 					<header>
@@ -776,6 +822,7 @@
 						</article>
 					</div>
 				</section>
+
 
 			</main>
 			<footer>

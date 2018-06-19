@@ -14,8 +14,9 @@ body
   display: grid
   grid-template-columns: unquote("[header-start nav-start] 16em [nav-end main-start] 1fr [header-end main-end]")
   grid-template-rows: unquote("[header-start] 5em [header-end nav-start main-start] 1fr [nav-end main-end]")
-  width: 100vw
+  overflow: hidden
   transition: 2s
+  width: 100vw
   @media only screen and (max-width:$sm)
     grid-template-columns: unquote("[header-start nav-start main-start] 1fr [header-end nav-end main-end]")
     grid-template-rows: unquote("[header-start] 8.5em [header-end nav-start] 3em [nav-end main-start] 1fr [main-end]")

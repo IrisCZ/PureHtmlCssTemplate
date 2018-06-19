@@ -14,12 +14,14 @@ header
       .right
         align-self: flex-end
         max-width: 75%
+        padding-left: .5em
         text-align: right
 
   >header
     grid-column: header-start / header-end
     grid-row: header-start / header-end
     padding-left: 1.5em
+    position: static
     z-index: 1
     @media only screen and (max-width:$sm)
       flex-direction: column
@@ -35,7 +37,6 @@ header
         font-size: .7em
         margin-bottom: 2em
       .accent-text
-        color: $main-color
         position: absolute
       .leaned
         transform: rotate(-3deg) translate(14em)
