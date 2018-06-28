@@ -21,7 +21,6 @@ header
     grid-column: header-start / header-end
     grid-row: header-start / header-end
     padding-left: 1.5em
-    position: static
     z-index: 1
     @media only screen and (max-width:$sm)
       flex-direction: column
@@ -39,7 +38,7 @@ header
       .accent-text
         position: absolute
       .leaned
-        transform: rotate(-3deg) translate(14em)
+        transform: rotate(-3deg) translate(14em, .5em)
         @media only screen and (max-width:$sm)
           transform: rotate(-3deg) translate(8.5em)
       h1, h2
